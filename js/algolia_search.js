@@ -1,6 +1,6 @@
 // from https://blog.naaln.com/2016/07/hexo-with-algolia/
 const algoliaHandler = () => {
-  const algoliaSettings = ALGOLIA_CONFIG.algolia;
+  const algoliaSettings = CONFIG.algolia;
   const isAlgoliaSettingsValid =
     algoliaSettings.applicationID &&
     algoliaSettings.apiKey &&
@@ -82,8 +82,8 @@ const algoliaHandler = () => {
             stats +
             '<span class="reimu-powered">' +
             '  <img src="' +
-            ALGOLIA_CONFIG.logo +
-            '" alt="Algolia" />' +
+            CONFIG.root +
+            'images/algolia_logo.svg" alt="Algolia" />' +
             "</span>" +
             "<hr />"
           );
