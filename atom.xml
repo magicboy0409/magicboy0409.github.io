@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>書士的書桌</title>
+  <icon>https://i.imgur.com/lTQv4cF.png</icon>
+  <subtitle>這裡是我的小書桌(其實是電腦)</subtitle>
+  <link href="https://blog.magicboy.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://blog.magicboy.xyz/"/>
+  <updated>2024-11-18T13:27:16.323Z</updated>
+  <id>https://blog.magicboy.xyz/</id>
+  
+  <author>
+    <name>摸書士</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>部落格的新功能！</title>
+    <link href="https://blog.magicboy.xyz/complete-blog/"/>
+    <id>https://blog.magicboy.xyz/complete-blog/</id>
+    <published>2024-11-18T13:04:49.000Z</published>
+    <updated>2024-11-18T13:27:16.323Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="新增了什麼？"><a href="#新增了什麼？" class="headerlink" title="新增了什麼？"></a>新增了什麼？</h1><p>多虧了hexo的插件以及基本架構，我可以很快地建立出這些功能，雖然還是有點費盡，但總之是完成了！<br>那麼來講講到底新增了什麼吧！</p><h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h2><p>你們可以看到上面有搜索功能，未來文章一多時，就可以利用搜索功能來搜尋文章了！當然你還得記得關鍵字，要是忘了……<del>就代表你無緣</del></p><h2 id="看板娘"><a href="#看板娘" class="headerlink" title="看板娘"></a>看板娘</h2><p>這是一個可愛的小小動漫人物，你可以換一個，也可以給他們換衣服(當然不包含過程)，覺得礙眼也可以按叉叉關閉，當然你還是能把他按回來，跟你那個已經跑了的女朋友不一樣&gt;w&lt;</p><h2 id="評論區"><a href="#評論區" class="headerlink" title="評論區"></a>評論區</h2><p>評論區可以讓大家留言自己的看法，我最怕的是有人吵架，希望不要，大家心平氣和，不然我一個</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">comments: false</span><br></pre></td></tr></table></figure><p>另外，我創了一個Discord群，未來架設好後，會再給大家邀請連結！<br>差不多就是這樣~ 希望大家看的開心！交流的開心！如果有什麼錯誤，請評論區告訴我(好不容易建立好的評論區，用一下!!!)</p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;新增了什麼？&quot;&gt;&lt;a href=&quot;#新增了什麼？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="https://blog.magicboy.xyz/categories/blog/"/>
+    
+    
+    <category term="部落格, 新功能" scheme="https://blog.magicboy.xyz/tags/%E9%83%A8%E8%90%BD%E6%A0%BC-%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我開部落格啦!!!</title>
+    <link href="https://blog.magicboy.xyz/hello-world/"/>
+    <id>https://blog.magicboy.xyz/hello-world/</id>
+    <published>2024-11-17T15:37:38.103Z</published>
+    <updated>2024-11-18T13:24:08.906Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="我開了部落格！？"><a href="#我開了部落格！？" class="headerlink" title="我開了部落格！？"></a>我開了部落格！？</h1><h2 id="你這是在幹嘛？"><a href="#你這是在幹嘛？" class="headerlink" title="你這是在幹嘛？"></a>你這是在幹嘛？</h2><p>大家好啊~~歡迎來到我這個油油的部落格XD<br>為什麼會開部落格呢？現在到底還有誰會用部落格？我不知道ww<br>但是在以前，我就很想這麼做了！不管跟不跟得上時代，我都想要完成我以前的夢想~<br>那大家看到的這個畫面，都要歸功於<a href="https://d-sketon.github.io/">拔剑Sketon</a>，謝謝你做出這麼棒的模板！</p><h2 id="以前怎麼沒做？"><a href="#以前怎麼沒做？" class="headerlink" title="以前怎麼沒做？"></a>以前怎麼沒做？</h2><p>因為我爛<br>要不是學校要我們做專題，然後我要弄一堆有的沒的電路板，什麼樹莓派有的沒的，要不是這些，不然我估計是不會碰後台的東東。<br>其實在讀大學之前我就有稍微的碰過Discord的機器人，那時候夠做出”用戶打Hello機器人就回Hello”的程序<del>我就覺得自己真強</del></p><h2 id="怎麼突然會做了？"><a href="#怎麼突然會做了？" class="headerlink" title="怎麼突然會做了？"></a>怎麼突然會做了？</h2><p>因為我幸運<br>我在因緣際會下遇到了一些程式大佬，有一個比我小很多歲，但他寫Discord Bot的功力可不是蓋的。<br>還有一位是幫我最多最多的，幾乎從我專題開始就幫助我非常多，我目前對於程式的知識量估計有90%來自於他，然後他估計也會看到這裡，然後他也知道我在講他，<strong>他是我的神！！！</strong></p><h2 id="未來會有什麼內容？"><a href="#未來會有什麼內容？" class="headerlink" title="未來會有什麼內容？"></a>未來會有什麼內容？</h2><p>這個部落格我未來將會以<strong>魔術</strong>、<strong>文學</strong>、<strong>設計</strong>這三大主題為主，我會時不時地分享我覺得很棒的新魔術或是對於魔術的心得，也會分享一些我讀到的書的心得，跟大家分享我喜歡的文學作品，也會跟大家分享一些我的平面設計，當然還是以接案的為主，畢竟我也不是非常多時間~</p><h1 id="那麼大家就請多指教了！"><a href="#那麼大家就請多指教了！" class="headerlink" title="那麼大家就請多指教了！"></a>那麼大家就請多指教了！</h1>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;我開了部落格！？&quot;&gt;&lt;a href=&quot;#我開了部落格！？&quot; class=&quot;headerlink&quot; title=&quot;我開了部落格！？&quot;&gt;&lt;/a&gt;我開了部落格！？&lt;/h1&gt;&lt;h2 id=&quot;你這是在幹嘛？&quot;&gt;&lt;a href=&quot;#你這是在幹嘛？&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="https://blog.magicboy.xyz/categories/blog/"/>
+    
+    
+    <category term="摸書士, 魔術, 文學, 平面設計" scheme="https://blog.magicboy.xyz/tags/%E6%91%B8%E6%9B%B8%E5%A3%AB-%E9%AD%94%E8%A1%93-%E6%96%87%E5%AD%B8-%E5%B9%B3%E9%9D%A2%E8%A8%AD%E8%A8%88/"/>
+    
+  </entry>
+  
+</feed>
