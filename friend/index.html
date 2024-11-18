@@ -55,6 +55,12 @@
   <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   
   
+    
+      
+<link rel="stylesheet" href="https://npm.webcache.cn/@waline/client@v2/dist/waline.css">
+
+    
+  
   
   
     
@@ -208,7 +214,7 @@
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">```yml</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="comment">#您的名字</span></span><br><span class="line">  <span class="attr">url:</span> <span class="comment">#您的网址</span></span><br><span class="line">  <span class="attr">desc:</span> <span class="comment">#简短描述</span></span><br><span class="line">  <span class="attr">image:</span> <span class="comment">#一张图片</span></span><br><span class="line"><span class="string">```</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="小伙伴們"><a href="#小伙伴們" class="headerlink" title="小伙伴們"></a>小伙伴們</h2><div class="friend-wrap" data-aos="zoom-in"><div class="friend-item-wrap">
-    <a target="_blank" rel="noopener" href="https://d-sketon.github.io/"></a>
+    <a href="https://d-sketon.github.io/" rel="noopener external nofollow noreferrer" target="_blank"></a>
     <div class="friend-icon-wrap">
       <div class="friend-icon">
           <img data-src="https://d-sketon.github.io/avatar/avatar.webp" data-sizes="auto" alt="D-Sketon" class="lazyload">
@@ -231,8 +237,18 @@
       
       
       
+        <a data-aos="zoom-in" href="/friend/index.html#comments" class="article-comment-link">
+          <span class="post-comments-count waline-comment-count" data-path="/friend/index.html" itemprop="commentCount"></span>
+          留言
+        </a>
       
       
+      
+      
+        <span data-aos="zoom-in" class="article-visitor-link">
+          <span class="waline-pageview-count" data-path="/friend/">0</span>
+          <em class="post-meta-item-text">閲讀量</em>
+        </span>
       
       
 
@@ -242,6 +258,8 @@
 
 </article>
 
+
+  <div id="comments" class="wcomment" data-aos="fade-up"></div>
 
 
 
@@ -515,6 +533,26 @@
       </script>
       
 
+
+  <script data-pjax type="module">
+    const { init } = await safeImport("https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.mjs", "sha384-9sbqJjrfGjbkI6/PI4nU/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH/KinBEAZII/5")
+    if(_$('.wcomment')) {
+      window.walineInstance = init({
+        el: '.wcomment',
+        serverURL: 'blog-zeta-ochre.vercel.app',
+        lang: 'zh-TW',
+        locale: {},
+        emoji: ["https://unpkg.com/@waline/emojis@1.2.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/alus","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba","https://unpkg.com/@waline/emojis@1.2.0/tw-emoji"],
+        meta: ["nick","mail","link"],
+        requiredMeta: ["nick","mail"],
+        wordLimit: JSON.parse('0'),
+        comment: true,
+        pageSize: JSON.parse('10'),
+        dark: 'html[data-theme="dark"]',
+        pageview: JSON.parse('true'),
+    });
+    }
+  </script>
 
 
 
