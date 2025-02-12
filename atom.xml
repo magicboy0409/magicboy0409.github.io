@@ -6,7 +6,7 @@
   <link href="https://blog.magicboy.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.magicboy.xyz/"/>
-  <updated>2025-02-09T06:20:28.373Z</updated>
+  <updated>2025-02-11T10:15:56.350Z</updated>
   <id>https://blog.magicboy.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>連國小生都能學會如何建立網頁！</title>
+    <link href="https://blog.magicboy.xyz/how-to-web/"/>
+    <id>https://blog.magicboy.xyz/how-to-web/</id>
+    <published>2025-02-11T08:13:05.000Z</published>
+    <updated>2025-02-11T10:15:56.350Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>大家好！又是我，摸書士！今天想要跟大家分享「如何用最少的費用創建屬於自己的形象網站」！<br>在那之前，先聲明一件事，就是這個做法一般而言僅限於靜態網頁，而無法使用動態網頁，那什麼是靜態網頁呢？簡單來說就是你沒有後台，無法使用如註冊、登入、購物車、留言、搜索等等的功能。</p><p>順帶一提，我的部落格是靜態網頁，但為什麼可以留言跟搜索？這就要感謝 Waline 這個後端評論系統了！他提供了後台，讓留言得以出現在靜態網頁上。而搜索功能則有勞 Algolia search，他是透過生成所有文章中所有的字來進行搜索的，看起來長這樣。</p><blockquote class="imgur-embed-pub" lang="en" data-id="7AhZkyE"><a href="https://imgur.com/7AhZkyE">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script><p>以上都是基於 HEXO 這個部落格的基底所衍生出來的外掛模組，本篇都不會講到，本篇只會教你如何建立如 <a href="https://art.magicboy.xyz/">書士．作品集</a> 這樣的靜態網站</p><h1 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h1><p><strong><a href="https://github.com/">⭐Github</a></strong><br>他的用途很多，但今天是用於放置你的網頁內容，他是你無須購買虛擬機即可建置網頁的關鍵，我們會建立一個儲存庫並將你的網頁放在裡頭，因此請務必申請一個帳號！<br><strong><a href="https://gitforwindows.org/">⭐git bash</a></strong><br>setup.exe容量：大約 47 Mb<br>這是<strong>命令行介面工具</strong>，讓我們可以執行如「將資料夾內容上傳到Github儲存庫」或「將更新內容覆蓋舊內容」之類的指令，如果你想要直接拉到儲存庫也沒有不行，取決於你想怎麼做。<br><strong><a href="https://code.visualstudio.com/">⭐Visual Studio Code</a></strong><br>setup.exe容量：大約 79 Mb<br>編寫網頁內容的關鍵，這個軟體是工程師們的最愛，他可以編寫許多語言做許多事，但這邊不細說，總之我們會利用這個軟體幫助你編輯網站。<br><strong><a href="https://tw.godaddy.com/">⭐goDaddy</a></strong><br>用於購買網域，我的網域只花了我 70 元新台幣，當然這只是第一年的價格，第二年的價格為 700 多台幣，由於我的網域後墜是.xyz，所以比較便宜，但是如果你選擇的是.com 或.tw可能就會比較貴。<br><strong><a href="https://html5up.net/">⭐html5up</a></strong><br>容量：根據你的選擇有所不同，但壓縮檔通常不超過2Mb<br>這是有需多模板的地方，根據你的需求，選擇適合你的模板，利用該模板進行改造，變成屬於你的網站，html5up的存在為你省下了許多時間，你可以點選 LIVE DEMO，馬上知道他在網站上看起來是甚麼樣子，還可以看網站在 PC(桌機、筆電等等)、Mobile(手機)、或是平板等不同裝置中看起來會是甚麼尺寸跟甚麼外觀。</p><p>以上工具為你提供了許多的便利性，請感謝他們٩(｡・ω・｡)﻿و</p><h1 id="建立儲存庫"><a href="#建立儲存庫" class="headerlink" title="建立儲存庫"></a>建立儲存庫</h1><p>當你建立好 Github 帳號後，請點選左上角的三條線，點 HOME，你會來到這個頁面，左邊有一棵綠綠的按鈕寫著 NEW，點他，就好了！<br><img src="https://i.imgur.com/yDGcADR.png" alt="alt text"><br>再來你會看到這個頁面，取名很重要，邏輯是 [用戶名.github.io]，以我的為例，我的用戶名為 <em>magicboy0409</em>，那就是 <em>magicboy0409</em>.github.io<br>完成後，點選右下角的綠色按鈕 Create repository 就好了！<br><img src="https://i.imgur.com/BBsJ65g.png" alt="alt text"><br>接下來就會看到這個畫面，代表儲存庫建立完成了！現在讓我們來寫網站吧！<br><img src="https://i.imgur.com/twpkrhI.png" alt="alt text"></p><h1 id="html5up"><a href="#html5up" class="headerlink" title="html5up"></a>html5up</h1><p>選擇一個模板，點選 Download，會下載一個 zip 檔，順便推薦一個我很喜歡用的解壓縮軟體，叫做 <a href="https://tw.bandisoft.com/bandizip/">Bangzip</a>，我之前遇到解壓縮後因為編碼問題導致檔案名稱不正確進而無法讀取時，我的好朋友呱呱為我找到的解決方案，<del>我們一起底下留言謝謝呱呱</del>。<br>解壓縮時請務必選擇「自動解壓縮自此」，否則檔案會散落在你所在的位置，不過也不用擔心，你只要 <em>Ctrl+Z</em> 就可以了！<br>接下來你會解壓縮出一個資料夾，並且他的名稱是一段很長的英文跟數字，右鍵這個資料夾，點選 <em>重新命名</em> ，為這個資料夾 <strong>用英文</strong> 重新命名成簡單好懂的名稱(用中文的話有機會因為編碼問題而導致一些奇奇怪怪的錯誤)。</p><p>恭喜你！可以開始編寫你的網站了！</p><h1 id="Visual-Studio-Code"><a href="#Visual-Studio-Code" class="headerlink" title="Visual Studio Code"></a>Visual Studio Code</h1><p>簡稱 VS code，記得在安裝時要勾選「在桌面建立捷徑」的按鈕，但是如果忘記勾選了，也沒關係！你可以從工具攔中的搜尋功能輸入visual，應該就會出現了！<br><img src="https://i.imgur.com/FirMs6M.png" alt="alt text"><br>用右鍵點擊他，並點選「開啟檔案位置」，然後你會來到他所在的位置，正常來說會只有一個檔案，右鍵點選他，選取「<strong>傳送到</strong>」，選擇 <strong>「桌面(建立捷徑) 」</strong>，就好了！</p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>AI會取代人類嗎？</title>
