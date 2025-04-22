@@ -1,0 +1,1329 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-TW"  
+    
+      data-theme-mode="auto"
+    
+  >
+  <head>
+  
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://blog.magicboy.xyz';window.REIMU_CONFIG.i18n_languages = ["en"];</script>
+  
+  <title>
+    連國小生都能學會如何建立網頁！ |
+    
+    書士的書桌
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta name="description" content="前言大家好！又是我，摸書士！今天想要跟大家分享「如何用最少的費用創建屬於自己的形象網站」！在那之前，先聲明一件事，就是這個做法一般而言僅限於靜態網頁，而無法使用動態網頁，那什麼是靜態網頁呢？簡單來說就是你沒有後台，無法使用如註冊、登入、購物車、留言、搜索等等的功能。 順帶一提，我的部落格是靜態網頁，但為什麼可以留言跟搜索？這就要感謝 Waline 這個後端評論系統了！他提供了後台，讓留言得以出現在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="連國小生都能學會如何建立網頁！">
+<meta property="og:url" content="https://blog.magicboy.xyz/en/how-to-web/">
+<meta property="og:site_name" content="書士的書桌">
+<meta property="og:description" content="前言大家好！又是我，摸書士！今天想要跟大家分享「如何用最少的費用創建屬於自己的形象網站」！在那之前，先聲明一件事，就是這個做法一般而言僅限於靜態網頁，而無法使用動態網頁，那什麼是靜態網頁呢？簡單來說就是你沒有後台，無法使用如註冊、登入、購物車、留言、搜索等等的功能。 順帶一提，我的部落格是靜態網頁，但為什麼可以留言跟搜索？這就要感謝 Waline 這個後端評論系統了！他提供了後台，讓留言得以出現在">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.imgur.com/yDGcADR.png">
+<meta property="og:image" content="https://i.imgur.com/BBsJ65g.png">
+<meta property="og:image" content="https://i.imgur.com/twpkrhI.png">
+<meta property="og:image" content="https://i.imgur.com/FirMs6M.png">
+<meta property="og:image" content="https://i.imgur.com/nxojdVJ.png">
+<meta property="og:image" content="https://i.imgur.com/3Alob59.png">
+<meta property="og:image" content="https://i.imgur.com/LDr77JS.png">
+<meta property="og:image" content="https://i.imgur.com/ONHqBhz.png">
+<meta property="og:image" content="https://i.imgur.com/ImkydFY.png">
+<meta property="og:image" content="https://i.imgur.com/PijAYoE.png">
+<meta property="og:image" content="https://i.imgur.com/1AdTdRp.png">
+<meta property="og:image" content="https://i.imgur.com/WHtRFWg.png">
+<meta property="og:image" content="https://i.imgur.com/i4Su8mt.png">
+<meta property="og:image" content="https://i.imgur.com/Q8xEVey.png">
+<meta property="og:image" content="https://i.imgur.com/4WMqGT0.png">
+<meta property="article:published_time" content="2025-02-19T08:13:05.000Z">
+<meta property="article:modified_time" content="2025-02-19T08:16:51.797Z">
+<meta property="article:author" content="摸書士">
+<meta property="article:tag" content="如何製作網頁">
+<meta property="article:tag" content="程式教學">
+<meta property="article:tag" content="宣傳網站">
+<meta property="article:tag" content="形象網站">
+<meta property="article:tag" content="靜態網頁">
+<meta property="article:tag" content="自訂網域">
+<meta property="article:tag" content="Github">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/yDGcADR.png">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="書士的書桌" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  
+    
+      
+<link rel="stylesheet" href="https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.css">
+
+    
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      <div class="loading-word">少女祈禱中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/en/">Home</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/en/archives">Archives</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/en/about">About</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/en/friend">Friend</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed" target="_blank"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="Search"></a>
+    
+  </nav>
+  
+    
+    <nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">English</span>
+        </div>
+        <ul class="select-items" id="select-items">
+          
+            <li data-value="zh-TW" >正體中文</li>
+          
+            <li data-value="en" class="selected">English</li>
+          
+        </ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};
+            
+              langMap['zh-TW'] = '/how-to-web/';
+            
+              langMap['en'] = '/en/how-to-web/';
+            
+            selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav>
+  
+</div>
+<header id="header">
+  
+    <picture></picture>
+    <img  fetchpriority="high" src="https://digitalnotebook.in/up/2023/06/Website-design.jpg" alt="連國小生都能學會如何建立網頁！">
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">連國小生都能學會如何建立網頁！</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
+  
+  
+    <div id="aplayer" theme="var(--color-link)" data-aos="fade-up"></div>
+  
+  
+  <div class="sidebar-wrapper wrap-sticky">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        
+          <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%80%E9%9C%80%E5%B7%A5%E5%85%B7"><span class="toc-number">2.</span> <span class="toc-text">所需工具</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Github%E5%BB%BA%E7%AB%8B%E5%84%B2%E5%AD%98%E5%BA%AB"><span class="toc-number">3.</span> <span class="toc-text">Github建立儲存庫</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#html5up%E9%81%B8%E6%93%87%E6%A8%A1%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">html5up選擇模板</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Visual-Studio-Code%E7%B7%A8%E5%AF%AB%E7%B6%B2%E9%A0%81"><span class="toc-number">5.</span> <span class="toc-text">Visual Studio Code編寫網頁</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%B5%90%E6%A7%8B"><span class="toc-number">5.1.</span> <span class="toc-text">基本結構</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E9%82%84%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84"><span class="toc-number">5.2.</span> <span class="toc-text">你還可能用到的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A7%E5%AE%B9"><span class="toc-number">5.3.</span> <span class="toc-text">內容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B6%B2%E5%9D%80"><span class="toc-number">5.3.1.</span> <span class="toc-text">網址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%96%E7%89%87"><span class="toc-number">5.3.2.</span> <span class="toc-text">圖片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A8%BB%E8%A7%A3"><span class="toc-number">5.3.3.</span> <span class="toc-text">註解</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-Bash%E6%8E%A8%E9%80%81%E6%AA%94%E6%A1%88"><span class="toc-number">6.</span> <span class="toc-text">Git Bash推送檔案</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#goDaddy%E8%A8%AD%E5%AE%9A%E7%B6%B2%E5%9F%9F"><span class="toc-number">7.</span> <span class="toc-text">goDaddy設定網域</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#DNS-%E6%B7%BB%E5%8A%A0%E7%B4%80%E9%8C%84"><span class="toc-number">7.1.</span> <span class="toc-text">DNS 添加紀錄</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Github-%E8%A8%AD%E5%AE%9A"><span class="toc-number">7.2.</span> <span class="toc-text">Github 設定</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%8D%E5%A4%96%E5%8A%9F%E8%83%BD"><span class="toc-number">8.</span> <span class="toc-text">額外功能</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B8%AE%E5%9C%96"><span class="toc-number">8.1.</span> <span class="toc-text">縮圖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Discord-%E5%80%8B%E4%BA%BA%E8%B3%87%E6%96%99%E6%B7%BB%E5%8A%A0%E7%B6%B2%E7%AB%99"><span class="toc-number">8.2.</span> <span class="toc-text">Discord 個人資料添加網站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E7%9A%84%E6%A8%A1%E6%9D%BF%E7%B6%B2%E7%AB%99"><span class="toc-number">8.3.</span> <span class="toc-text">其他的模板網站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%B8%B8%E6%A8%99"><span class="toc-number">8.4.</span> <span class="toc-text">客製化游標</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%82%8F%E8%BC%AF"><span class="toc-number">8.5.</span> <span class="toc-text">邏輯</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B5%90%E8%AA%9E"><span class="toc-number">9.</span> <span class="toc-text">結語</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="摸書士" class="lazyload">
+  <div class="sidebar-author-name">摸書士</div>
+  <div class="sidebar-description">我會分享一些有趣的事情或一些酷東東！</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Post</div>
+    <div class="sidebar-state-number">9</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Category</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tag</div>
+    <div class="sidebar-state-number">26</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-google sidebar-social-icon">
+      <a href=https://www.magicboy.xyz itemprop="url" target="_blank" aria-label="google" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-instagram sidebar-social-icon">
+      <a href=https://www.instagram.com/movie_boy0409 itemprop="url" target="_blank" aria-label="instagram" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-discord sidebar-social-icon">
+      <a href=https://discord.gg/MUmhhVDNGw itemprop="url" target="_blank" aria-label="discord" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/en/" aria-label="Home"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">Home</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/en/archives" aria-label="Archives"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">Archives</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/en/about" aria-label="About"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">About</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/en/friend" aria-label="Friend"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">Friend</div>
+      </div>
+    
+  
+</div>
+</div>
+        
+      
+      
+        
+          <div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div>
+        
+      
+    </div>
+  </div>
+
+  <div class="sidebar-widget">
+  
+  </div>
+  
+</aside>
+
+          <section id="main"><article id="post-how-to-web" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <span class="article-date-link" data-aos="zoom-in">
+    <time datetime="2025-02-19T08:13:05.000Z" itemprop="datePublished">2025-02-19</time>
+    <time style="display: none;" id="post-update-time">2025-02-19</time>
+  </span>
+</div>
+
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/en/categories/%E7%A8%8B%E5%BC%8F%E6%95%99%E5%AD%B8/" data-aos="zoom-in">程式教學</a>
+  </div>
+
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>大家好！又是我，摸書士！今天想要跟大家分享「如何用最少的費用創建屬於自己的形象網站」！<br>在那之前，先聲明一件事，就是這個做法一般而言僅限於靜態網頁，而無法使用動態網頁，那什麼是靜態網頁呢？簡單來說就是你沒有後台，無法使用如註冊、登入、購物車、留言、搜索等等的功能。</p>
+<p>順帶一提，我的部落格是靜態網頁，但為什麼可以留言跟搜索？這就要感謝 Waline 這個後端評論系統了！他提供了後台，讓留言得以出現在靜態網頁上。而搜索功能則有勞 Algolia search，他是透過生成所有文章中所有的字來進行搜索的，看起來長這樣。</p>
+<blockquote class="imgur-embed-pub" lang="en" data-id="7AhZkyE"><a target="_blank" rel="noopener" href="https://imgur.com/7AhZkyE">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+<p>以上都是基於 HEXO 這個部落格的基底所衍生出來的外掛模組，本篇都不會講到，本篇只會教你如何建立如 <a target="_blank" rel="noopener" href="https://art.magicboy.xyz/">書士．作品集</a> 這樣的靜態網站</p>
+<h1 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h1><p><strong><a target="_blank" rel="noopener" href="https://github.com/">⭐Github</a></strong><br>他的用途很多，但今天是用於放置你的網頁內容，他是你無須購買虛擬機即可建置網頁的關鍵，我們會建立一個儲存庫並將你的網頁放在裡頭，因此請務必申請一個帳號！<br><strong><a target="_blank" rel="noopener" href="https://gitforwindows.org/">⭐git bash</a></strong><br>setup.exe容量：大約 47 Mb<br>這是<strong>命令行介面工具</strong>，讓我們可以執行如「將資料夾內容上傳到Github儲存庫」或「將更新內容覆蓋舊內容」之類的指令，如果你想要直接拉到儲存庫也沒有不行，取決於你想怎麼做。<br><strong><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">⭐Visual Studio Code</a></strong><br>setup.exe容量：大約 79 Mb<br>編寫網頁內容的關鍵，這個軟體是工程師們的最愛，他可以編寫許多語言做許多事，但這邊不細說，總之我們會利用這個軟體幫助你編輯網站。<br><strong><a target="_blank" rel="noopener" href="https://tw.godaddy.com/">⭐goDaddy</a></strong><br>用於購買網域，我的網域只花了我 70 元新台幣，當然這只是第一年的價格，第二年的價格為 700 多台幣，由於我的網域後綴是.xyz，所以比較便宜，但是如果你選擇的是.com 或.tw可能就會比較貴。<br><strong><a target="_blank" rel="noopener" href="https://html5up.net/">⭐html5up</a></strong><br>容量：根據你的選擇有所不同，但壓縮檔通常不超過2Mb<br>這是有需多模板的地方，根據你的需求，選擇適合你的模板，利用該模板進行改造，變成屬於你的網站，html5up的存在為你省下了許多時間，你可以點選 LIVE DEMO，馬上知道他在網站上看起來是甚麼樣子，還可以看網站在 PC(桌機、筆電等等)、Mobile(手機)、或是平板等不同裝置中看起來會是甚麼尺寸跟甚麼外觀。</p>
+<p>以上工具為你提供了許多的便利性，請感謝他們٩(｡・ω・｡)﻿و</p>
+<h1 id="Github建立儲存庫"><a href="#Github建立儲存庫" class="headerlink" title="Github建立儲存庫"></a>Github建立儲存庫</h1><p>當你建立好 Github 帳號後，請點選左上角的三條線，點 HOME，你會來到以下這個頁面，左邊有一棵綠綠的按鈕寫著 NEW，點他，就好了！<br><img src="https://i.imgur.com/yDGcADR.png" alt="alt text"><br>再來你會看到這個頁面，開始為你的儲存庫取名(Repository name)，取名很重要，邏輯是 [用戶名.github.io]，以我的為例，我的用戶名為 <em>magicboy0409</em>，那就是 <em>magicboy0409</em>.github.io<br>完成後，點選右下角的綠色按鈕 Create repository 就好了！<br><img src="https://i.imgur.com/BBsJ65g.png" alt="alt text"><br>接下來就會看到以下這個畫面，代表儲存庫建立完成了！現在讓我們來寫網站吧！<br><img src="https://i.imgur.com/twpkrhI.png" alt="alt text"></p>
+<h1 id="html5up選擇模板"><a href="#html5up選擇模板" class="headerlink" title="html5up選擇模板"></a>html5up選擇模板</h1><p>選擇一個模板，點選 Free Download，會下載一個 zip 檔，順便推薦一個我很喜歡用的解壓縮軟體，叫做 <a target="_blank" rel="noopener" href="https://tw.bandisoft.com/bandizip/">Bangzip</a>，我之前遇到解壓縮後因為編碼問題導致檔案名稱不正確進而無法讀取時，我的好朋友呱呱為我找到的解決方案，<del>我們一起底下留言謝謝呱呱</del>。<br>解壓縮時請務必選擇「自動解壓縮至此」，否則檔案會散落在你所在的位置，不過也不用擔心，你只要 <em>Ctrl+Z</em> 就可以了！<br>接下來你會解壓縮出一個資料夾，並且他的名稱是一段很長的英文跟數字，右鍵這個資料夾，點選 <em>重新命名</em> ，為這個資料夾 <strong>用英文</strong> 重新命名成 <strong>簡單好懂</strong> 的名稱(用中文的話有機會因為編碼問題而導致一些奇奇怪怪的錯誤)。</p>
+<p>恭喜你！可以開始編寫你的網站了！</p>
+<h1 id="Visual-Studio-Code編寫網頁"><a href="#Visual-Studio-Code編寫網頁" class="headerlink" title="Visual Studio Code編寫網頁"></a>Visual Studio Code編寫網頁</h1><p>簡稱 VS code，記得在安裝時要勾選「在桌面建立捷徑」的按鈕，但是如果忘記勾選了，也沒關係！你可以從工具攔中的搜尋功能輸入visual，應該就會出現了！<br><img src="https://i.imgur.com/FirMs6M.png" alt="alt text"><br>用右鍵點擊他，並點選「開啟檔案位置」，然後你會來到他所在的位置，正常來說會只有一個檔案，右鍵點選他，選取「<strong>傳送到</strong>」，選擇 <strong>「桌面(建立捷徑) 」</strong>，就好了！</p>
+<p>打開 VS Code，點選左上角的「File &gt; Open Folder」，然後點選你從html5up下載並改名的那個模板的資料夾，點一下然後直接按「選擇資料夾」<br><img src="https://i.imgur.com/nxojdVJ.png" alt="alt text"></p>
+<p>那麼接下來就跟程式有關聯了，首先先來介紹一些基本的東西</p>
+<h2 id="基本結構"><a href="#基本結構" class="headerlink" title="基本結構"></a>基本結構</h2><p>我們可以看到左邊的檔案跟資料夾包含了assets、images、index.html、LICENSE.txt 跟 README.txt<br><img src="https://i.imgur.com/3Alob59.png" alt="alt text"></p>
+<ul>
+<li>assets<br>裡面還包括了 css、js、sass、webfont等等的資料夾。</li>
+<li>images<br>用來存放圖片的一個地方，在你的網頁上所需要的圖都請務必放進這裡！</li>
+<li>index.html<br>最主要的網站，接下來你將在這個地方編寫你的網站內容</li>
+<li>LICENSE.txt<br>執照，寫了關於使用範圍，基本上只要是自用的就不會有事。</li>
+<li>README.txt<br>一些作者想說的話跟一些感謝名單。</li>
+</ul>
+<h2 id="你還可能用到的"><a href="#你還可能用到的" class="headerlink" title="你還可能用到的"></a>你還可能用到的</h2><ul>
+<li>css<br>css 會有設置外觀的程式碼，本篇不會細講，但如果你有需要改變一些顏色之類的，你可以在 index.html 中，透過「ctrl+F」並搜尋「stylesheet」，通常後面會有 <code>href=&quot;assets/css/main.css&quot;</code> 的一串程式碼，<code>assets/css/main.css</code>就是控制外觀樣式的css檔案名稱跟他的路徑，根據不同模板可能會有不同路徑，請按照你的模板的路徑去找。<br>在你想設置外觀的地方，往前找第一個寫有 <em>class</em> 的地方，將 <em>class</em> 後面的類別名稱複製，比方說我想要更改 name 的外觀，那麼我就需要找到 name 前面的第一個 <em>class</em>，這裡是 <em>field half</em>，將這一段複製起來，到 main.css 中，用 ctrl + F，貼上，這時候你會發現什麼都找不到，那是因為 field half 實際上是兩個類別混和在一起的，所以正確的打法應該是<strong>field.half</strong>，這樣就能找到了！<br><strong>❗ 注意！更改該類別的內容後，所有套用該類別的地方的外觀都會一併變更。</strong></li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;fields&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;field half&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">id</span>=<span class="string">&quot;name&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Name&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;field half&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">name</span>=<span class="string">&quot;email&quot;</span> <span class="attr">id</span>=<span class="string">&quot;email&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Email&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;field&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;message&quot;</span> <span class="attr">id</span>=<span class="string">&quot;message&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Message&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;7&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>js<br>java script，通常是用來編寫一些腳本用的，比方說開啟擬態視窗，YouTube 打開通知的那個地方就是，他會在同一個頁面打開另一個小視窗，他都寫在同一個 html 中，但只有在用戶點擊某個按鈕後，才會打開擬態視窗。除此之外他可以做許多事情，但這篇主要是為沒有程式基礎的人所寫的，所以不多說用法。</li>
+<li>favicon<br>如果你想為你的網站新增一個標誌性的 LOGO 或圖標，你可以在資料夾中直接放入一個名為 favicon.ico 的圖案，作法也很簡單，先準備好你的圖片，請務必是正方形的，然後用以下的icon產生器網站生成，將生成後下載的 .ico 檔案直接放在資料夾的最外層就好。<br><strong><a target="_blank" rel="noopener" href="https://www.ifreesite.com/favicon/">icon產生器</a></strong><br>像我的 icon 就是我的 LOGO<br><img src="https://i.imgur.com/LDr77JS.png" alt="alt text"></li>
+</ul>
+<h2 id="內容"><a href="#內容" class="headerlink" title="內容"></a>內容</h2><p>在你的資料夾中，同樣也會有一個 index.html 檔案，點開他，你的瀏覽器會顯示你的網頁內容，每當你在 VS Code 中編輯到一個段落時，記得按下 Ctrl + S 進行存檔，並在瀏覽器中按下 F5 重新整理，就能看到最新的內容了！<br><strong>❗ 如果 F5 不管用的話，可以嘗試 ctrl + F5</strong></p>
+<p>那麼內容就根據你的需求進行更改，通常都是白字以及網址需要更改，對應你瀏覽器上顯示的內容來比對，一個一個慢慢改，包含你的標題，那是顯示在分頁框上的，那以下是幾個你可以會用到的更改。</p>
+<h3 id="網址"><a href="#網址" class="headerlink" title="網址"></a>網址</h3><p>透過修改 <em>href</em> 中的內容，來變更目標網站。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://scribes.magicboy.xyz/&quot;</span>&gt;</span>關於一位摸書士<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>如果你希望點擊後不是直接跳到目標網站，而是開啟新的分頁，你可以多加 <code>target=&quot;_blank&quot;</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://scribes.magicboy.xyz/&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>關於一位摸書士<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="圖片"><a href="#圖片" class="headerlink" title="圖片"></a>圖片</h3><p>透過修改 src 的路徑中的檔案名稱來顯示你想要的圖片，記得要包含後綴，比方說 .jpg 或 .png。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;images/pic01.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>如果你希望游標停在該圖片上時，會有小字跑出來，可以增加<code>title=&quot;我是小字&quot;</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;images/pic01.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;我是小字&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="註解"><a href="#註解" class="headerlink" title="註解"></a>註解</h3><p>如果你有甚麼地方不想要顯示，又不想刪掉，你可以用<code>&lt;!--(註解內容)--&gt;</code>來註解</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">&lt;img src=&quot;images/pic01.jpg&quot; alt=&quot;&quot; title=&quot;我是小字&quot; /&gt;</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>以上可以花很多時間玩！如果有想要什麼效果卻做不出來的話，可以底下留言，<del>我會請其他程式大佬來教你</del>。<br>那麼當你建立好一個網頁後，我們就要推上你的 Github 儲存庫了！</p>
+<h1 id="Git-Bash推送檔案"><a href="#Git-Bash推送檔案" class="headerlink" title="Git Bash推送檔案"></a>Git Bash推送檔案</h1><p>現在在你的資料夾中，右鍵，你會看到一個 <em>Git Bash Here</em>，點他，將會開啟一個視窗，我們將要在這個視窗中輸入指令，把我們的網站推送到 Github 上了！<br>接下來的所有動作，簡單來說就是，將你電腦裡的檔案<strong>新增到</strong>索引，並從索引<strong>提交到</strong>本地儲存庫，再從本儲存庫<strong>推送到</strong>遠端數據庫。<br>好的，我知道聽起來有點複雜，所以我要你想像你現在要去 7-11 送貨，首先你會將貨物放進包裝盒裡面，再把包裝盒拿去離你家最近的 7-11，這間 7-11 會幫你把貨物送到遠方的 7-11。<br>將貨物放進包裝盒就是將電腦檔案新增到索引，把包裝盒拿去離你家最近的 7-11，就是把索引的內容提交到本地儲存庫，而將貨物送到遠方的 7-11 就是從本地存庫推送到遠端儲存庫。<br>我們來看具體如何操作吧！</p>
+<p>1.在當前的資料夾初始化一個 Git 儲存庫，使該資料夾可以進行版本控制。<br><code>$ git init</code></p>
+<p>2.設定一個遠端儲存庫，命名為 origin，對應到 GitHub 上的 repo。<br><code>$ git remote add origin https://github.com/(你的用戶名)/(你的用戶名).github.io.git</code></p>
+<ul>
+<li>在此步驟可能會要求你登入，就輸入帳號密碼登入就好！</li>
+<li><code>git remote add</code>只能用來新增遠端，如果之前已經設定過 origin，這條指令會報錯，如果你需要修改，可以先刪除原本的 origin，然後再按照以下方式重新設定。</li>
+</ul>
+<p><code>$ git remote remove origin</code><br><code>$ git remote add origin https://github.com/(你的用戶名)/(你的用戶名).github.io.git</code></p>
+<p>3.確保 origin 設定正確，輸入這個指令後，會顯示目前設定的遠端儲存庫的網址。<br><code>$ git remote -v</code></p>
+<p>4.檢查有哪些檔案變更、未追蹤或修改過了但還沒有提交之類的資訊<br><code>$ git status</code></p>
+<p>5.將所有你新增、修改的檔案放入 Git 的暫存區<br><code>$ git add .</code></p>
+<ul>
+<li>記得一定要加點點，.這個點點.，我知道他很小，很容易忽略(受害者在此,,Ծ‸Ծ,,)。</li>
+<li>如果你本地的某個檔案刪除了，這時候又將整個資料夾放進暫存區，推送時，該檔案也會被刪除。</li>
+<li>如果你只想加入某個檔案，可以用<code>git add (檔案名稱.後綴)</code>，不小心加入了不想提交的檔案，使用<code>git reset HEAD (檔案名稱.後綴)</code>。</li>
+</ul>
+<p>6.將加入暫存區的內容提交到 Git 的本地儲存庫。<br><code>$ git commit -m (你的更新內容簡述)</code></p>
+<p>7.將內容推送到遠端儲存庫的 origin<br><code>git push -u origin main</code></p>
+<ul>
+<li>第一次推送需要這樣，之後推送的話可以只用<code>git push</code>來推送。<br>8.列出所有分支的指令</li>
+</ul>
+<p><code>$ git branch</code></p>
+<p>如此一來，你就成功地將你的網站推送到 Github 上了！恭喜！</p>
+<p>在你的電腦裡的該資料夾上，也會有一個名為<code>.git</code>的隱藏資料夾，從資料夾上方點選「檢視」，然後點選「副檔名」底下「隱藏的項目」，就可以看到了！<br><img src="https://i.imgur.com/ONHqBhz.png" alt="alt text"></p>
+<h1 id="goDaddy設定網域"><a href="#goDaddy設定網域" class="headerlink" title="goDaddy設定網域"></a>goDaddy設定網域</h1><p>你唯一需要花錢的地方<br>從 <strong><a target="_blank" rel="noopener" href="https://reurl.cc/04qVgk">goDaddy</a></strong> 註冊一個帳號，然後選擇一個你喜歡的網域名稱並購買，以 <strong>youtubehub</strong> 為例<br><img src="https://i.imgur.com/ImkydFY.png" alt="alt text"><br>可以看到 .xyz 第一年是台幣 75 元，但是看下圖<br><img src="https://i.imgur.com/PijAYoE.png" alt="alt text"><br>他從第二年就會變回原價 761 元。</p>
+<p>當然如果說你第二年使用別的網域，也可以以便宜的價格買到！<br>他說保護或什麼的那些都不用，你第一年只會花購買網域的錢。</p>
+<p>購買完之後，讓我們來設定 DNS！<br>首先，從 <strong><a target="_blank" rel="noopener" href="https://reurl.cc/04qVgk">這裡</a></strong> 開始，點選右上角的 ID 名稱，點選 <em>我的產品</em>，點選你的企業底下的 <em>你的網域</em>，點選左邊寫著儀表板底下的 <em>網域</em>，再來你會看到續約之類的資訊，下面會有三個小框，其中一個就是 <em>管理DNS</em>。</p>
+<h2 id="DNS-添加紀錄"><a href="#DNS-添加紀錄" class="headerlink" title="DNS 添加紀錄"></a>DNS 添加紀錄</h2><p>DNS，網域名稱系統，Domain Name System，作為將域名和IP位址相互對映的一個分散式資料庫，能夠使人更方便地訪問網際網路。<br>1.點擊 <em>新增紀錄</em>，會讓你填寫四個內容，分別是 <em>類型</em>、<em>名稱</em>、<em>內容值</em>、<em>TTL</em>。</p>
+<p>2.這裡我們只會用到 CNAME，所以選擇 <em>CNAME</em>。</p>
+<p>3.然後 <em>名稱</em> 請輸入一段英文，他是你的子域名，比方說我的部落格的網址是 <code>blog.magicboy.xyz</code>，我的子域名就是<code>blog</code>。</p>
+<p>4.<em>內容值</em> 輸入 (github的用戶名).git.io</p>
+<p>5.<em>TTL</em> 選擇 <em>1&#x2F;2小時</em>。</p>
+<h2 id="Github-設定"><a href="#Github-設定" class="headerlink" title="Github 設定"></a>Github 設定</h2><p>接下來在你的電腦上的網頁的資料夾中，右鍵，新增，文字文件，會建立一個txt檔，取名為 CNAME，在文件裡面輸入<code>https://(子域名).(網域)</code>，以我的為例，我會在裡面輸入 <code>https://blog.magicboy.xyz</code>。<br>然後儲存，關掉，接下來右鍵 CNAME.txt，點選 <em>重新命名</em>，將檔名中的 .txt 給刪除，只留下 CNAME。<br><strong>❗ 如果要再編輯內容的話，只需要再把 .txt 加回去就好！</strong></p>
+<p>好的！現在讓我們再練習一次推送資料到 Github！將 <strong>Git Bash推送檔案</strong> 中的步驟 5 ~ 7 再做一遍就行了！</p>
+<p>最後，回到你的 Github 的儲存庫，點選最右側的 Settings<br><img src="https://i.imgur.com/1AdTdRp.png" alt="alt text"></p>
+<p>進去後點選左側的 Page<br><img src="https://i.imgur.com/WHtRFWg.png" alt="alt text"></p>
+<p>正常來說 DNS 掃描需要一段時間，如果他掃描好了，你會看到他寫 <em>你的網站已經在(網址)上線了</em> 等等的內容，你可以在下方的 <em>Custom domain</em> 中看看輸入框中是否有你的網域名稱。<br><strong>❗ 請務必拉到 Page 頁面最底下，將 Enforce HTTPS 打勾，很重要！</strong><br>HTTP 是沒有加密的，使用 HTTPS 會對訪問網站的人更加安全，大家會更願意瀏覽你的網站！</p>
+<p>如此一來，你就能夠透過你的網址來造訪網站了！</p>
+<h1 id="額外功能"><a href="#額外功能" class="headerlink" title="額外功能"></a>額外功能</h1><p>以下會介紹一些你還可能用到的功能</p>
+<h2 id="縮圖"><a href="#縮圖" class="headerlink" title="縮圖"></a>縮圖</h2><p>如果你在 Discord 或是 LINE 中發送網址，如果沒有以下設定的話，就只會有網址而沒有縮圖跟簡介，所以這裡要教大家如何做出如下的縮圖<br><img src="https://i.imgur.com/i4Su8mt.png" alt="alt text"><br>基本上複製以下的內容去修改就可以了</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--縮圖--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;Gura餵食模擬器&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">&quot;og:title&quot;</span> <span class="attr">content</span>=<span class="string">&quot;來餵食Gura！&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">&quot;og:description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;Gura很餓，已經迫不及待把蝦蝦們給吃了(？&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">&quot;og:image&quot;</span> <span class="attr">content</span>=<span class="string">&quot;你的圖片路徑(ex. images/pic01.png)&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">&quot;og:url&quot;</span> <span class="attr">content</span>=<span class="string">&quot;https://scribes.magicboy.xyz/game/eatgame/&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">&quot;og:type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;website&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;twitter:card&quot;</span> <span class="attr">content</span>=<span class="string">&quot;你的圖片路徑(ex. images/pic01.png)&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;twitter:title&quot;</span> <span class="attr">content</span>=<span class="string">&quot;Gura餵食模擬器&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;twitter:description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;Gura很餓，已經迫不及待把蝦蝦們給吃了(？&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;twitter:image&quot;</span> <span class="attr">content</span>=<span class="string">&quot;你的圖片路徑(ex. images/pic01.png)&quot;</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;twitter:url&quot;</span> <span class="attr">content</span>=<span class="string">&quot;https://scribes.magicboy.xyz/game/eatgame/&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Discord-個人資料添加網站"><a href="#Discord-個人資料添加網站" class="headerlink" title="Discord 個人資料添加網站"></a>Discord 個人資料添加網站</h2><p>下圖可以看到，Discord 也能添加自己的網站，但是你需要證明那是你的網站，你只需要用 DNS 掃描，或是在你的資料夾中加入 <em>.well-known</em> 資料夾，並依照我們添加 CNAME 檔案的作法，在 Discord 中從設定頁面中點選<strong>連結</strong>，並選擇<strong>Domain</strong>，把 discord.txt 中填入 Discord 提供的  <em>內容</em>，內容可能是 <em>df</em> 開頭的，儲存後把 .txt 去掉，再推送到 Github。<br><img src="https://i.imgur.com/Q8xEVey.png" alt="alt text"></p>
+<h2 id="其他的模板網站"><a href="#其他的模板網站" class="headerlink" title="其他的模板網站"></a>其他的模板網站</h2><p>除了 html5up 之外，也有其他提供模板的網站，有些可以完全由自己掌控，有些則由該網站替你保存並且有些功能需要付費。比方說 <strong><a target="_blank" rel="noopener" href="https://zh.wix.com/website/templates">WIX</a></strong>，他提供了很不錯的功能，讓你就算對程式不熟悉，也能透過可視化的介面讓你編輯網站。<br>但是如同下圖所看到的，他需要付費。<br><img src="https://i.imgur.com/4WMqGT0.png" alt="alt text"></p>
+<p>當然如果你錢夠多也可以這麼做，但我個人更喜歡能盡可能自己掌控！也可以花比較少的錢。</p>
+<h2 id="客製化游標"><a href="#客製化游標" class="headerlink" title="客製化游標"></a>客製化游標</h2><p>如果想要讓游標在你的網頁上是特別的，你可以上網搜尋其他人製作的游標，然後依照他們的游標來設計，如果沒有修圖軟體也沒關係，我們可以用 <strong><a target="_blank" rel="noopener" href="https://www.photopea.com/">線上版Photoshop</a></strong>！<br>同樣都是免費的，編輯好你的游標，將他放進 <em>images</em> 資料夾中，然後在你的 main.css 裡放入以下代碼，auto 的部分是一般的游標(一般來說是一個箭頭)，pointer 就是當你在碰到按鈕之類的地方，會出現的游標(一般來說是一隻手伸出食指，<del>你可以學 GTA 的網站放一個伸出中指的手</del>)<br>然後從你的代碼中，尋找 <strong>第一個出現的div</strong>，比方說<code>&lt;div id=&quot;wrapper&quot;&gt;</code>，在這個地方加入<code>class=&quot;custom-cursor&quot;</code>，最後會是<code>&lt;div id=&quot;page-wrapper&quot; class=&quot;custom-cursor&quot;&gt;</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*游標*/</span></span><br><span class="line">	&lt;style&gt;</span><br><span class="line">		<span class="selector-class">.custom-cursor</span> &#123;</span><br><span class="line">			<span class="attribute">cursor</span>: <span class="built_in">url</span>(<span class="string">images/cursor.png</span>), auto;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">			<span class="attribute">cursor</span>: <span class="built_in">url</span>(<span class="string">images/cursorpointer.png</span>), pointer;</span><br><span class="line">			<span class="comment">/* 更換游標圖片的路徑 */</span></span><br><span class="line">		&#125;</span><br><span class="line">	&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="邏輯"><a href="#邏輯" class="headerlink" title="邏輯"></a>邏輯</h2><p>html 的邏輯是這樣的，他就像是俄羅斯娃娃，一層包一層，那你可以透過縮排來知道他在哪一層，你會發現 VS code 左邊都會有很多線，在同一條線上的就會是同一層，而往內縮就是下一層，再往內縮就又是下一層。<br>所以當你要編輯樣式之類的東西的時候，先從同一層或是上一層找控制他的元素，會比較好找！</p>
+<h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><p>一開始覺得複雜其實不要緊，這種東西就是做久了，就會越來越熟練！我今年也才學了第四年，以上這些工具都是我在沒有太多預算的時候所發現的，也有許多技術是我的工程師好朋友跟我分享的，很感謝他們，也很感謝這些工具。<br>早期要寫程式不是一件簡單的事，但如今科技發達，要做什麼都能夠變得很更容易取得資源，人類應當是越來越全能，取決於是否開始行動！</p>
+<p>最後感謝大家看完這一篇製作網站的教學，希望你能學會，我只是一個程式小萌新，有什麼解釋不清楚或是講錯的，請在下方留言區糾正我，非常感謝 (ﾉ&gt;ω&lt;)ﾉ<br>那我們就下一篇文章見了！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <blockquote class="article-copyright">
+    <p><strong><span class="icon-user icon"></span>Author: </strong>摸書士 @ 書士的書桌</p>
+    <p><strong><span class="icon-link icon"></span>Permalink: </strong><a href="https://blog.magicboy.xyz/en/how-to-web/">https://blog.magicboy.xyz/en/how-to-web/</a></p>
+    
+    
+    <p><strong><span class="icon-calendar icon"></span>Updated: </strong>2025-02-19 16:16:51</p>
+    <p><strong><span class="icon-copyright icon"></span>License: </strong>All articles on this blog are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> license agreement unless otherwise stated. Please indicate the source when reprinting!</p>
+    <span class="icon-creative-commons article-copyright-bg"></span>
+  </blockquote>
+      
+      
+        <div class="sponsor-wrapper">
+  <div class="sponsor-button-wrapper">
+    <div class="sponsor-icon rotate"></div>
+    <div class="sponsor-title">Sponsor</div>
+    <div class="sponsor-icon rotate"></div>
+  </div>
+  <div class="sponsor-tip">請作者喝杯珍奶吧~(,,・ω・,,)</div>
+  
+    <div class="sponsor-qr">
+      
+        <div class="sponsor-qr-image-wrapper">
+          <img src="https://payment.ecpay.com.tw/Upload/QRCode/202302/QRCode_0c98310b-ae86-4b31-b446-687772a9fe98.png" alt=綠界 width="200" />
+          <p class="sponsor-qr-name">綠界</p>
+        </div>
+      
+    </div>
+  
+</div>
+      
+      
+      
+      
+        <a data-aos="zoom-in" href="/en/how-to-web/#comments" class="article-comment-link">
+          <span class="post-comments-count waline-comment-count" data-path="/en/how-to-web/" itemprop="commentCount"></span>
+          Comments
+        </a>
+      
+      
+      
+      
+        <span data-aos="zoom-in" class="article-visitor-link">
+          <span class="waline-pageview-count" data-path="/en/how-to-web/">0</span>
+          <em class="post-meta-item-text">Readings</em>
+        </span>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/en/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/en/tags/%E5%A6%82%E4%BD%95%E8%A3%BD%E4%BD%9C%E7%B6%B2%E9%A0%81/" rel="tag">如何製作網頁</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/en/tags/%E5%AE%A3%E5%82%B3%E7%B6%B2%E7%AB%99/" rel="tag">宣傳網站</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/en/tags/%E5%BD%A2%E8%B1%A1%E7%B6%B2%E7%AB%99/" rel="tag">形象網站</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/en/tags/%E7%A8%8B%E5%BC%8F%E6%95%99%E5%AD%B8/" rel="tag">程式教學</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/en/tags/%E8%87%AA%E8%A8%82%E7%B6%B2%E5%9F%9F/" rel="tag">自訂網域</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/en/tags/%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/" rel="tag">靜態網頁</a></li></ul>
+
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        <img data-src="https://www.asmag.com.tw/upload/pic/case/42949.8646269.jpg" data-sizes="auto" alt="AI會取代人類嗎？" class="lazyload">
+      
+      <a href="/en/will-ai-replace-humans/"></a>
+      <div class="article-nav-caption">Older</div>
+      <h3 class="article-nav-title">
+        
+          AI會取代人類嗎？
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+
+
+
+  <section id="comments" data-aos="fade-up">
+    <div class="comment-header">
+      
+      
+      <h2 class="comment-title">說些話吧！</h2>
+      <div class="comment-selector">
+        <div class="comment-selector-wrap">
+            
+            <div class="selector-item" data-selector="waline">
+              <span>waline</span>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+    <div class="comment-content">
+      
+        <div class="comment waline-comment" data-aos="fade-up"
+          id="waline-comment">
+        </div>
+      
+    </div>
+  </section>
+
+
+</section>
+        </div>
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      
+      
+      
+        2024-2025
+      
+      <span class="footer-info-sep rotate"></span>
+      摸書士
+    </div>
+    
+      <div>
+        Powered by&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        21.6k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        01:09
+      </div>
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">Number of visits&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">Number of visitors&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">Contents</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%80%E9%9C%80%E5%B7%A5%E5%85%B7"><span class="toc-number">2.</span> <span class="toc-text">所需工具</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Github%E5%BB%BA%E7%AB%8B%E5%84%B2%E5%AD%98%E5%BA%AB"><span class="toc-number">3.</span> <span class="toc-text">Github建立儲存庫</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#html5up%E9%81%B8%E6%93%87%E6%A8%A1%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">html5up選擇模板</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Visual-Studio-Code%E7%B7%A8%E5%AF%AB%E7%B6%B2%E9%A0%81"><span class="toc-number">5.</span> <span class="toc-text">Visual Studio Code編寫網頁</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%B5%90%E6%A7%8B"><span class="toc-number">5.1.</span> <span class="toc-text">基本結構</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E9%82%84%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84"><span class="toc-number">5.2.</span> <span class="toc-text">你還可能用到的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A7%E5%AE%B9"><span class="toc-number">5.3.</span> <span class="toc-text">內容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B6%B2%E5%9D%80"><span class="toc-number">5.3.1.</span> <span class="toc-text">網址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%96%E7%89%87"><span class="toc-number">5.3.2.</span> <span class="toc-text">圖片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A8%BB%E8%A7%A3"><span class="toc-number">5.3.3.</span> <span class="toc-text">註解</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-Bash%E6%8E%A8%E9%80%81%E6%AA%94%E6%A1%88"><span class="toc-number">6.</span> <span class="toc-text">Git Bash推送檔案</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#goDaddy%E8%A8%AD%E5%AE%9A%E7%B6%B2%E5%9F%9F"><span class="toc-number">7.</span> <span class="toc-text">goDaddy設定網域</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#DNS-%E6%B7%BB%E5%8A%A0%E7%B4%80%E9%8C%84"><span class="toc-number">7.1.</span> <span class="toc-text">DNS 添加紀錄</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Github-%E8%A8%AD%E5%AE%9A"><span class="toc-number">7.2.</span> <span class="toc-text">Github 設定</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%8D%E5%A4%96%E5%8A%9F%E8%83%BD"><span class="toc-number">8.</span> <span class="toc-text">額外功能</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B8%AE%E5%9C%96"><span class="toc-number">8.1.</span> <span class="toc-text">縮圖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Discord-%E5%80%8B%E4%BA%BA%E8%B3%87%E6%96%99%E6%B7%BB%E5%8A%A0%E7%B6%B2%E7%AB%99"><span class="toc-number">8.2.</span> <span class="toc-text">Discord 個人資料添加網站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E7%9A%84%E6%A8%A1%E6%9D%BF%E7%B6%B2%E7%AB%99"><span class="toc-number">8.3.</span> <span class="toc-text">其他的模板網站</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%B8%B8%E6%A8%99"><span class="toc-number">8.4.</span> <span class="toc-text">客製化游標</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%82%8F%E8%BC%AF"><span class="toc-number">8.5.</span> <span class="toc-text">邏輯</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B5%90%E8%AA%9E"><span class="toc-number">9.</span> <span class="toc-text">結語</span></a></li></ol>
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="摸書士" class="lazyload">
+  <div class="sidebar-author-name">摸書士</div>
+  <div class="sidebar-description">我會分享一些有趣的事情或一些酷東東！</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Post</div>
+    <div class="sidebar-state-number">9</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>Category</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>Tag</div>
+    <div class="sidebar-state-number">26</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-google sidebar-social-icon">
+      <a href=https://www.magicboy.xyz itemprop="url" target="_blank" aria-label="google" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-instagram sidebar-social-icon">
+      <a href=https://www.instagram.com/movie_boy0409 itemprop="url" target="_blank" aria-label="instagram" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-discord sidebar-social-icon">
+      <a href=https://discord.gg/MUmhhVDNGw itemprop="url" target="_blank" aria-label="discord" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/en/" aria-label="Home"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">Home</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/en/archives" aria-label="Archives"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">Archives</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/en/about" aria-label="About"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">About</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/en/friend" aria-label="Friend"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">Friend</div>
+      </div>
+    
+  
+</div>
+</div>
+      
+    
+  </div>
+  
+    
+      <div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div>
+    
+  
+</nav>
+
+    </div>
+    
+      <div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png"/>
+        </div>
+      </div>
+    
+    
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+  
+<script src="/js/generator_search.js" defer></script>
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js" integrity="sha384-8LyaidD9GPxQQgLJO&#x2F;WRw&#x2F;O2h3BoNq&#x2F;ApI&#x2F;ecpvM6RsrCz2qP2ppBXUKihP4V&#x2F;2d" crossorigin="anonymous"></script>
+
+  <script>
+    window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
+  </script>
+
+
+
+
+
+  <script>
+    function initLive2d() {
+      live2d.init("https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/", {themeTipsPath: ""});
+    }
+  </script>
+  
+<script src="https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/js/live2d-autoload.js" onload="initLive2d &amp;&amp; initLive2d()" async></script>
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js" integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA+Wd&#x2F;QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script>
+
+  <script data-pjax>
+    window.quicklink?.listen({
+      timeout: 3000,
+      priority: true,
+      ignores: []
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div>
+    
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "摸書士",
+          title: "連國小生都能學會如何建立網頁！",
+          url: "https://blog.magicboy.xyz/how-to-web/",
+          excerpt: "",
+          description: "",
+          stripContent: "前言大家好！又是我，摸書士！今天想要跟大家分享「如何用最少的費用創建屬於自己的形象網站」！在那之前，先聲明一件事，就是這個做法一般而言僅限於靜態網頁，而無法使用動態網頁，那什麼是靜態網頁呢？簡單來說就是你沒有後台，無法使用如註冊、登入、購物車、留言、搜索等等的功能。 順帶一提，我的部落格是靜態網頁，但為什麼可以留言跟搜索？這就要感謝 Waline 這個後端評論系統了！他提供了後台，讓留言得以出現在靜態網頁上。而搜索功能則有勞 Algolia search，他是透過生成所有文章中所有的字來進行搜索",
+          date: "Wed Feb 19 2025 16:13:05 GMT+0800",
+          updated: "Wed Feb 19 2025 16:16:51 GMT+0800",
+          cover: "https://digitalnotebook.in/up/2023/06/Website-design.jpg",
+        };
+      </script>
+       
+    
+    
+      
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+        
+      
+    
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+        
+
+
+
+
+
+
+
+
+<script data-pjax>
+  var loadScript = (src, integrity) => {
+    const script = document.createElement('script');
+    script.src = src;
+    if (integrity) script.integrity = integrity;
+    script.crossOrigin = 'anonymous';
+    return script;
+  };
+
+  var commentConfigKeys = ['valine', 'waline', 'twikoo', 'gitalk', 'giscus'];
+  var commentConfig = {
+    valine: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.valine-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https://npm.webcache.cn/valine@1.5.1/dist/Valine.min.js',
+          'sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE+s5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn'
+        );
+        script.onload = () => {
+          var GUEST_INFO = ['nick', 'mail', 'link'];
+          var guest_info = 'nick,mail,link'.split(',').filter((item) => {
+            return GUEST_INFO.indexOf(item) > -1
+          });
+          var recordIP = JSON.parse('true');
+          var highlight = JSON.parse('true');
+          var visitor = JSON.parse('false');
+          var serverURLs = undefined;
+
+          if (window.Valine) {
+            new Valine({
+              el: '.valine-comment',
+              appId: "",
+              appKey: "",
+              placeholder: "Just go go",
+              pageSize: '10',
+              avatar: 'mp',
+              lang: 'zh-TW',
+              recordIP: recordIP,
+              highlight: highlight,
+              visitor: visitor,
+              requiredFields: guest_info,
+              path: window.location.pathname,
+              serverURLs
+            });
+          }
+        };
+        document.head.appendChild(script);
+      }
+    },
+    waline: {
+      enable: true,
+      load: async () => {
+        const container = document.querySelector('.waline-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        let walineInit;
+        const walineCdn = 'https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.mjs';
+        const walineIntegrity = 'sha384-9sbqJjrfGjbkI6/PI4nU/MvBfEmkkPC4YK9I4zBeMIf1CVCZdCMH/KinBEAZII/5';
+
+        const module = await safeImport(walineCdn, walineIntegrity);
+        walineInit = module.init;
+
+        window.walineInstance = walineInit({
+          el: '.waline-comment',
+          serverURL: 'blog-zeta-ochre.vercel.app',
+          lang: 'zh-TW',
+          locale: {},
+          emoji: ["https://unpkg.com/@waline/emojis@1.2.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/alus","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba","https://unpkg.com/@waline/emojis@1.2.0/tw-emoji"],
+          meta: ["nick","mail","link"],
+          requiredMeta: ["nick","mail"],
+          wordLimit: JSON.parse('0'),
+          comment: true,
+          pageSize: JSON.parse('10'),
+          dark: 'html[data-theme="dark"]',
+          pageview: JSON.parse('true'),
+        });
+      }
+    },
+    twikoo: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.twikoo-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https://npm.webcache.cn/twikoo@1.6.16/dist/twikoo.all.min.js',
+          'sha384-lDHsr5aZmkMS0eKnsUu6e9RWP+dRmn7sgjRAKGOAoXfMyzbUK6Qi86zZK7R+KvRV'
+        );
+
+        script.onload = () => {
+          if (window.twikoo) {
+            twikoo.init({
+              envId: '',
+              el: '.tcomment',
+              region: '',
+            })
+          }
+        } 
+        document.head.appendChild(script);
+      }
+    },
+    gitalk: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.gitalk-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        const script = loadScript(
+          'https://npm.webcache.cn/gitalk@1.8.0/dist/gitalk.min.js',
+          'sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU/lcEH5O8eVbSDhbPwsiVUTp/aGX/z/5EuMA'
+        );
+
+        script.onload = () => {
+          if (false) {
+            const md5Script = loadScript(
+              'https://npm.webcache.cn/blueimp-md5@2.19.0/js/md5.min.js',
+              'sha384-JmVtRz6RWiXnA14QbIOJzPuU3MidULOpBP66deeLLyyoF4Tr/gZlbkHkL6vTthxH'
+            );
+            md5Script.onload = initGitalk;
+            document.head.appendChild(md5Script);
+          } else {
+            initGitalk();
+          }
+        }
+        document.head.appendChild(script);
+
+        function initGitalk() {
+          var gitalkId = location.pathname;
+          var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: '',
+            owner: '',
+            admin: null,
+            id: gitalkId, // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+          })
+          gitalk.render('gitalk-comment');
+        }
+      }
+    },
+    giscus: {
+      enable: false,
+      load: () => {
+        const container = document.querySelector('.giscus-comment');
+        if (!container) return;
+        container.style.display = 'block';
+
+        // 删除可能已存在的 giscus 脚本和 iframe
+        const existingScript = container.querySelector('script[src*="giscus.app/client.js"]');
+        if (existingScript) existingScript.remove();
+        const existingFrame = document.querySelector('iframe.giscus-frame');
+        if (existingFrame) existingFrame.remove();
+
+        const giscusScript = document.createElement('script');
+        const domMode = document.documentElement.getAttribute("data-theme");
+        giscusScript.src = 'https://giscus.app/client.js';
+        giscusScript.setAttribute('data-repo', '');
+        giscusScript.setAttribute('data-repo-id', '');
+        giscusScript.setAttribute('data-category', ''); 
+        giscusScript.setAttribute('data-category-id', '');
+        giscusScript.setAttribute('data-mapping', '0');
+        giscusScript.setAttribute('data-strict', '0');
+        giscusScript.setAttribute('data-reactions-enabled', '1');
+        giscusScript.setAttribute('data-emit-metadata', '0');
+        giscusScript.setAttribute('data-input-position', 'bottom');
+        giscusScript.setAttribute('data-theme', domMode === 'dark' ? 'dark' : 'light');
+        giscusScript.setAttribute('data-lang', 'zh-CN');
+        giscusScript.setAttribute('crossorigin', 'anonymous');
+        giscusScript.async = true;
+        container.appendChild(giscusScript);
+        document.body.addEventListener('light-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'light' } } }, 'https://giscus.app');
+        });
+        document.body.addEventListener('dark-theme-set', () => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: { setConfig: { theme: 'dark' } } }, 'https://giscus.app');
+        });
+      }
+    }
+  }
+  commentConfig.enable = commentConfigKeys.some(key => commentConfig[key].enable);
+
+  var defaultComment = '';
+  if (commentConfig.enable) {
+    // 1. 首先检查localStorage中是否有保存的评论类型
+    var savedCommentType = localStorage.getItem('commentType');
+    
+    // 2. 如果localStorage中有值且对应的评论系统可用，就使用它
+    if (savedCommentType) {
+      if (commentConfig[savedCommentType]?.enable) {
+        defaultComment = savedCommentType;
+      }
+    }
+    
+    // 3. 如果localStorage无效，检查配置的默认评论系统
+    if (!defaultComment) {
+      var configDefault = 'waline';
+      if (commentConfig[configDefault]?.enable) {
+        defaultComment = configDefault;
+      }
+    }
+    
+    // 4. 如果前两项都无效，按指定顺序找到第一个可用的评论系统
+    if (!defaultComment) {
+      defaultComment = commentConfigKeys.find(sys => commentConfig[sys].enable) || '';
+    }
+  }
+  function loadComments() {
+    if (!commentConfig.enable) return;
+    // 评论组件加载状态跟踪
+    const loadedComments = {
+      valine: false,
+      waline: false,
+      twikoo: false,
+      gitalk: false,
+      giscus: false
+    };
+
+    // 隐藏所有评论容器
+    const hideAllComments = () => {
+      const commentContainers = document.querySelectorAll('.comment');
+      commentContainers.forEach(container => {
+        container.style.display = 'none';
+      });
+    };
+
+    // 按需加载评论系统
+    const loadCommentSystem = (type) => {
+      if (loadedComments[type]) {
+        // 如果已加载，只需显示对应容器
+        document.querySelector(`.${type}-comment`).style.display = 'block';
+        return;
+      }
+
+      // 根据类型加载对应的脚本
+      commentConfig[type]?.load();
+      loadedComments[type] = true;
+    };
+
+    // 评论组件选择器
+    const changeActiveCommentItems = (item) => {
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let i = 0; i < commentItems.length; i++) {
+        commentItems[i].classList.remove('active');
+      }
+      item.classList.add('active');
+
+      // 获取要加载的评论系统类型
+      const commentType = item.getAttribute('data-selector');
+
+      // 隐藏所有评论系统
+      hideAllComments();
+
+      // 加载选中的评论系统
+      loadCommentSystem(commentType);
+    };
+
+    const commentInit = () => {
+      // 评论组件选择器点击事件
+      const commentItems = document.querySelectorAll('.selector-item');
+      for (let item of commentItems) {
+        item.addEventListener('click', () => {
+          // 保存选择器状态
+          const commentType = item.getAttribute('data-selector');
+          window.localStorage.setItem('commentType', commentType);
+          // 切换选中状态
+          changeActiveCommentItems(item);
+        });
+      }
+
+      // 检查是否需要加载默认评论系统
+      if (defaultComment) {
+        const defaultSelectorItem = document.querySelector(`[data-selector="${defaultComment}"]`);
+        if (!defaultSelectorItem) return;
+        defaultSelectorItem.style.display = 'block';
+        defaultSelectorItem.classList.add('active');
+        loadCommentSystem(defaultComment);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', commentInit);
+    } else {
+      commentInit();
+    }
+  };
+  loadComments();
+</script>
+
+      
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.8.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.js" integrity="sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL&#x2F;aORyw+5+HZoU6e" crossorigin="anonymous"></script>
+
+  
+    <script>
+      var isMobile = window.matchMedia('(max-width: 959px)').matches;
+      if (isMobile) {
+      const aplayer = _$('#aplayer');
+        if (aplayer) {
+          const aside = aplayer.parentNode;
+          if (aside?.tagName === 'ASIDE') {
+            aplayer.removeAttribute('data-aos');
+            aside.removeChild(aplayer);
+            document.body.appendChild(aplayer);
+          }
+        }
+      }
+      const ap = new APlayer({
+        theme: "var(--color-link)",
+        container: document.getElementById('aplayer'),
+        audio: [{"name":"jazz","artist":"Relax Jazz Cafe","url":"https://mu6.me/193226","cover":"cover1.jpg","lrc":"lrc1.lrc","theme":"#ebd0c2"}] || [],
+        fixed: isMobile ? true : (null || false),
+        autoplay: null || false,
+        loop: '' || 'all',
+        order: '' || 'list',
+        preload: '' || 'auto',
+        volume: null || 0.7,
+        mutex: null || true,
+        listFolded: null || false,
+        lrcType: null || 0,
+      });
+    </script>
+  
+
+
+
+
+
+    
+  </body>
+  </html>
+

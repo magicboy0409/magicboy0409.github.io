@@ -1,0 +1,976 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-TW"  
+    
+      data-theme-mode="auto"
+    
+  >
+  <head>
+  
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'https://blog.magicboy.xyz';window.REIMU_CONFIG.i18n_languages = ["en"];</script>
+  
+  <title>
+    
+    書士的書桌
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta name="description" content="我會分享一些有趣的事情或一些酷東東！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="書士的書桌">
+<meta property="og:url" content="https://blog.magicboy.xyz/">
+<meta property="og:site_name" content="書士的書桌">
+<meta property="og:description" content="我會分享一些有趣的事情或一些酷東東！">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://blog.magicboy.xyz/images/banner.webp">
+<meta property="article:author" content="摸書士">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.magicboy.xyz/images/banner.webp">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="書士的書桌" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  
+    
+      <link rel="preload" href="https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      <div class="loading-word">少女祈禱中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/">首頁</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/archives">歸檔</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/about">關於</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/friend">友鏈</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 訂閱" target="_blank"></a>
+    
+    
+    
+      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜尋"></a>
+    
+  </nav>
+  
+    
+    <nav id="i18n-nav">
+      <div class="custom-dropdown">
+        <div class="select-selected" id="select-selected">
+          <span id="nav-language-btn" class="nav-icon" style="padding: 0 20px 0 0"></span>
+          <span id="selected-lang">正體中文</span>
+        </div>
+        <ul class="select-items" id="select-items">
+          
+            <li data-value="zh-TW" class="selected">正體中文</li>
+          
+            <li data-value="en" >English</li>
+          
+        </ul>
+      </div>
+      <script>
+        var selectSelected = document.getElementById("select-selected");
+        var selectedLang = document.getElementById("selected-lang");
+        var selectItems = document.getElementById("select-items");
+        var selectOptions = selectItems.querySelectorAll("li");
+
+        selectSelected.addEventListener("click", () => {
+          selectItems.classList.toggle("show");
+        });
+
+        selectOptions.forEach((item) => {
+          item.addEventListener("click", () => {
+            const langMap = {};
+            
+              langMap['zh-TW'] = '/';
+            
+              langMap['en'] = '/en/';
+            
+            selectedLang.textContent = item.textContent;
+            selectItems.classList.remove("show");
+            selectOptions.forEach((option) => {
+              option.classList.remove("selected");
+            });
+            item.classList.add("selected");
+            window.location = langMap[item.dataset.value];
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".custom-dropdown")) {
+            selectItems.classList.remove("show");
+          }
+        });
+      </script>
+    </nav>
+  
+</div>
+<header id="header">
+  
+    
+      <picture>
+        
+      </picture>
+      
+        <img  fetchpriority="high" src="https://i.imgur.com/lltaG4e.png" alt="">
+      
+    
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">書士的書桌</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+            <a href="/" id="subtitle">這裡是我的小書桌(其實是電腦)</a>
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
+  
+  
+    <div id="aplayer" theme="var(--color-link)" data-aos="fade-up"></div>
+  
+  
+  <div class="sidebar-wrapper ">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        <div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="摸書士" class="lazyload">
+  <div class="sidebar-author-name">摸書士</div>
+  <div class="sidebar-description">我會分享一些有趣的事情或一些酷東東！</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">9</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分類</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>標籤</div>
+    <div class="sidebar-state-number">26</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-google sidebar-social-icon">
+      <a href=https://www.magicboy.xyz itemprop="url" target="_blank" aria-label="google" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-instagram sidebar-social-icon">
+      <a href=https://www.instagram.com/movie_boy0409 itemprop="url" target="_blank" aria-label="instagram" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-discord sidebar-social-icon">
+      <a href=https://discord.gg/MUmhhVDNGw itemprop="url" target="_blank" aria-label="discord" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首頁"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首頁</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="歸檔"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">歸檔</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="關於"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">關於</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友鏈"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友鏈</div>
+      </div>
+    
+  
+</div>
+
+      
+      
+    </div>
+  </div>
+
+  <div class="sidebar-widget">
+  
+  </div>
+  
+</aside>
+
+          <section id="main">
+  
+  
+    
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/how-to-web/" aria-label="連國小生都能學會如何建立網頁！"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        <img data-src="https://digitalnotebook.in/up/2023/06/Website-design.jpg" data-sizes="auto" alt="連國小生都能學會如何建立網頁！" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-02-19</span>
+        <span><span class="icon-pencil"></span>5.3k 字</span>
+        <span><span class="icon-clock"></span>19 分鐘</span>
+      </div>
+      <h2 class="post-title">連國小生都能學會如何建立網頁！</h2>
+      <article class="post-article">
+        
+          前言大家好！又是我，摸書士！今天想要跟大家分享「如何用最少的費用創建屬於自己的形象網站」！在那之前，先聲明一件事，就是這個做法一般而言僅限於靜態網頁，而無法使用動態網頁，那什麼是靜態網頁呢？簡單來說就是你沒有後台，無法使用如註冊、登入、購物車、留言、搜索等等的功能。
+順帶一提，我的部落格是靜態網頁，但為什麼可以留言跟搜索？這就要感謝 Waline 這個後端評論系統了！他提供了後台，讓留言得以出現在靜態網頁上。而搜索功能則有勞 Algolia search，他是透過生成所有文章中所有的字來進行搜索的，看起來長這樣。
+View post on imgur.com
+
+以上都是基於 HEXO 這個部落
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/will-ai-replace-humans/" aria-label="AI會取代人類嗎？"></a>
+    
+    
+    <div class="post-cover-right">
+      
+        <img data-src="https://www.asmag.com.tw/upload/pic/case/42949.8646269.jpg" data-sizes="auto" alt="AI會取代人類嗎？" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-02-09</span>
+        <span><span class="icon-pencil"></span>1.4k 字</span>
+        <span><span class="icon-clock"></span>4 分鐘</span>
+      </div>
+      <h2 class="post-title">AI會取代人類嗎？</h2>
+      <article class="post-article">
+        
+          摸書士的 👉 Discord 👈 社群與 👉 LINE 👈 社群開張了！摸書士的 👉 Discord 👈 社群與 👉 LINE 👈 社群開張了！摸書士的 👉 Discord 👈 社群與 👉 LINE 👈 社群開張了！很重要所講三遍，快點加入！！！ ε٩(๑&amp;gt; ₃ &amp;lt;)۶з
+前言大家好！我是摸書士，今天想要跟大家一起討論一件現代人類都在討論的問題：AI是否會取代人類？這個問題其實不難猜想，而且可以猜到一些未來可能會有的結局，但在那之前，我想先討論先分成以下幾點探討
+
+人類為什麼要工作？
+經濟體系為何存在？
+
+人類為什麼要工作？人類透過付出勞力，來換取金錢，再透
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/The-magician-of-dreams/" aria-label="秘密魔法 之 夢境的魔法師(連載中)"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        <img data-src="https://i.imgur.com/HVQsyDw.png" data-sizes="auto" alt="秘密魔法 之 夢境的魔法師(連載中)" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-02-01</span>
+        <span><span class="icon-pencil"></span>9.1k 字</span>
+        <span><span class="icon-clock"></span>30 分鐘</span>
+      </div>
+      <h2 class="post-title">秘密魔法 之 夢境的魔法師(連載中)</h2>
+      <article class="post-article">
+        
+          幻影今天又是個下雨的天氣，稍微打開窗，可以聞到一種淡淡的，卻令人懷念的味道。 似乎是雨水用力敲擊樹葉後所散發出來的味道，至少我從以前都是這麼認為的。
+這雨已經下了第三天了，要嘛就是下小些，要嘛就是下到被雨水打到的麻雀都有可能被送進靈古塔的程度。這種天氣不披個毛毯，開個暖爐，也有被送進靈古塔的可能性。我坐在幸福的暖爐旁，看著小說，吃者小泡芙，悠悠哉哉的。
+反正沒什麼事，我隨手從書櫃上拿了本小說來看，翻開了書，掉落了荼蘼花書籤，書籤飄到了窗邊，我伸出手想要將它撿回來。
+突然，雨勢開始慢慢地變大，從原本的小雨，變成了狂風暴雨，那種雨勢是令人心生畏懼的大，大到窗戶都有可能破掉的大，大到連自己的聲音都聽
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/phoenix/" aria-label="道具評測-Phoenix"></a>
+    
+    
+    <div class="post-cover-right">
+      
+        <img data-src="https://shoplineimg.com/582af13a617069d39bb60300/6629222699abe60017ba11cf/1080x.png?" data-sizes="auto" alt="道具評測-Phoenix" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-12-04</span>
+        <span><span class="icon-pencil"></span>1.1k 字</span>
+        <span><span class="icon-clock"></span>3 分鐘</span>
+      </div>
+      <h2 class="post-title">道具評測-Phoenix</h2>
+      <article class="post-article">
+        
+          道具效果將紙鈔用筆刺穿，並且神奇的復原。
+Hanson Chien中文名字簡子，來自台灣的魔術師，於 2011 年發表第一部作品Touch，國際知名產品評測平台Wizard Product Review獲得94%高分, 成為當期冠軍！簡子也創立了公司，名叫簡子製造，專注於撲克牌生產，以及開發原創魔術商品，並且曾經邀請過許多大師級魔術師開研習會，以及舉辦OMG台灣線上魔術大會，造福台灣魔術圈。
+Higar中文名字檜垣聡，來自日本的魔術師，曾發表的作品包含Rainbow、Discovery、Aurora、Son And Daughter、Phantom、Cherry Pie、Reparatiooo
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/demi-deck/" aria-label="道具評測-DEMI DECK"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        <img data-src="https://www.murphysmagicsupplies.com/images/61227-full.png" data-sizes="auto" alt="道具評測-DEMI DECK" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-11-27</span>
+        <span><span class="icon-pencil"></span>1.3k 字</span>
+        <span><span class="icon-clock"></span>4 分鐘</span>
+      </div>
+      <h2 class="post-title">道具評測-DEMI DECK</h2>
+      <article class="post-article">
+        
+          道具效果Demi Deck，效果非常簡單，就是將一副牌切成兩半，然後復原！官方也給出了一個延伸應用，就是切成兩半後，可以從其中一半找出觀眾的牌，並且反過來放回去，復原後，就只有觀眾那張牌是一半牌被一半牌面。
+Angelo Carbone不是足球員(如果你Google這個名字，你會先查到來自義大利的足球員)，出過的作品有Notion of Motion、Demi Deck、On Edge、The Gift、The End Book Test、Cue the Magic、The Gift、Humbug、Hover，其中的Demi Deck、On Edge、The Gift這三個作品最為有名。
+道具
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/sunflower/" aria-label="新詩 - 向日葵"></a>
+    
+    
+    <div class="post-cover-right">
+      
+        <img data-src="https://img.artpal.com/744671/11-20-11-3-5-12-7m.jpg" data-sizes="auto" alt="新詩 - 向日葵" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-11-23</span>
+        <span><span class="icon-pencil"></span>1.2k 字</span>
+        <span><span class="icon-clock"></span>3 分鐘</span>
+      </div>
+      <h2 class="post-title">新詩 - 向日葵</h2>
+      <article class="post-article">
+        
+          前言大家好呀！今天想跟大家分享我的新詩創作，這是在我高中那年畢業前寫的一篇新詩，那時看見學校的校刊有投稿單，於是就心血來潮寫了！我從國中開始就很喜歡寫一些歌詞，只不過現在拿出來看會很尷尬，這些東東除了現在的我看覺得好像不錯的之外，其他全被我封塵了！看來不幸那天死掉了，別人要摧毀的是電腦，我要摧毀的是裝這些東東的小盒子(說實話，我的電腦還真的沒有甚麼見不得人的東西w)
+向日葵噓！看她兀自仰望耗盡幾千幾萬世紀，也無法觸及的陽光
+她渴望成為陽光的一部分沉浸了許久，甚至遺棄了自我
+何苦呢？並不是所有慾望都是能夠追求的
+妳的崇拜，妳的沉默只能成為陽光下忽隱忽現的陰影
+再不願閉上眼妳將生根為曾經如妳一般的
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/how-to-props1/" aria-label="如何買道具？ I"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        <img data-src="https://i.imgur.com/GhE0zrd.png" data-sizes="auto" alt="如何買道具？ I" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-11-19</span>
+        <span><span class="icon-pencil"></span>1.3k 字</span>
+        <span><span class="icon-clock"></span>4 分鐘</span>
+      </div>
+      <h2 class="post-title">如何買道具？ I</h2>
+      <article class="post-article">
+        
+          為什麼不全都買？如果你是白鳥麗次，當然沒問題，但像我這種普通人，就必須在有限的預算下，思考到底什麼道具值得買了！那麼我將會分享幾個切入點，來分享我買道具時會考慮什麼！
+場景想像個人認為最重要的一點，而這一點將會隨著你的年紀、環境而有所改變，舉個簡單的例子，想像一下，你今天在教室裡拿一根筷子表演穿鈔，那看起來有多麼的突兀，相反地，你如果是在餐廳裡用筷子表演穿鈔，看起來就正常多了！所以當我買道具時，我會想像當我拿到道具後，我會怎麼表演？包括我表演前、表演過程以及表演後，比方說我在教室裡表演香檳自開……我已經想像到我被記過的畫面了w因此將道具與表演環境做配合，將會是你首要考慮的點。
+道具的分類-體積
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/complete-blog/" aria-label="部落格的新功能！"></a>
+    
+    
+    <div class="post-cover-right">
+      
+        <img data-src="https://www.publicdomainpictures.net/pictures/210000/nahled/new-text-overlay.jpg" data-sizes="auto" alt="部落格的新功能！" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-11-18</span>
+        <span><span class="icon-pencil"></span>313 字</span>
+        <span><span class="icon-clock"></span>1 分鐘</span>
+      </div>
+      <h2 class="post-title">部落格的新功能！</h2>
+      <article class="post-article">
+        
+          新增了什麼？多虧了hexo的插件以及基本架構，我可以很快地建立出這些功能，雖然還是有點費盡，但總之是完成了！那麼來講講到底新增了什麼吧！
+搜索功能你們可以看到上面有搜索功能，未來文章一多時，就可以利用搜索功能來搜尋文章了！當然你還得記得關鍵字，要是忘了……就代表你無緣
+看板娘這是一個可愛的小小動漫人物，你可以換一個，也可以給他們換衣服(當然不包含過程)，覺得礙眼也可以按叉叉關閉，當然你還是能把他按回來，跟你那個已經跑了的女朋友不一樣&amp;gt;w&amp;lt;
+評論區評論區可以讓大家留言自己的看法，我最怕的是有人吵架，希望不要，大家心平氣和，不然我一個
+1comments: false
+另外，我創了一個
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+      <div class="post-wrapper">
+  <div class="post-wrap-left" data-aos="fade-up">
+    
+      <a class="post-link" href="/hello-world/" aria-label="我開部落格啦!!!"></a>
+    
+    
+    <div class="post-cover-left">
+      
+        <img data-src="https://img.freepik.com/premium-vector/blog-word-text-cut-from-paper-flat-design_100655-3169.jpg?semt=ais_hybrid" data-sizes="auto" alt="我開部落格啦!!!" class="lazyload">
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-11-17</span>
+        <span><span class="icon-pencil"></span>482 字</span>
+        <span><span class="icon-clock"></span>1 分鐘</span>
+      </div>
+      <h2 class="post-title">我開部落格啦!!!</h2>
+      <article class="post-article">
+        
+          我開了部落格！？你這是在幹嘛？大家好啊~~歡迎來到我這個油油的部落格XD為什麼會開部落格呢？現在到底還有誰會用部落格？我不知道ww但是在以前，我就很想這麼做了！不管跟不跟得上時代，我都想要完成我以前的夢想~那大家看到的這個畫面，都要歸功於拔剑Sketon，謝謝你做出這麼棒的模板！
+以前怎麼沒做？因為我爛要不是學校要我們做專題，然後我要弄一堆有的沒的電路板，什麼樹莓派有的沒的，要不是這些，不然我估計是不會碰後台的東東。其實在讀大學之前我就有稍微的碰過Discord的機器人，那時候夠做出”用戶打Hello機器人就回Hello”的程序我就覺得自己真強
+怎麼突然會做了？因為我幸運我在因緣際會下遇到了一
+        
+      </article>
+    </div>
+  </div>
+</div>
+      
+    
+  
+
+
+
+</section>
+        </div>
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      
+      
+      
+        2024-2025
+      
+      <span class="footer-info-sep rotate"></span>
+      摸書士
+    </div>
+    
+      <div>
+        基於&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        21.6k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        01:09
+      </div>
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">總訪問量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">總訪客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      <div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="摸書士" class="lazyload">
+  <div class="sidebar-author-name">摸書士</div>
+  <div class="sidebar-description">我會分享一些有趣的事情或一些酷東東！</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">9</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分類</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>標籤</div>
+    <div class="sidebar-state-number">26</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-google sidebar-social-icon">
+      <a href=https://www.magicboy.xyz itemprop="url" target="_blank" aria-label="google" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-instagram sidebar-social-icon">
+      <a href=https://www.instagram.com/movie_boy0409 itemprop="url" target="_blank" aria-label="instagram" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-discord sidebar-social-icon">
+      <a href=https://discord.gg/MUmhhVDNGw itemprop="url" target="_blank" aria-label="discord" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首頁"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首頁</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="歸檔"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">歸檔</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="關於"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">關於</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友鏈"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友鏈</div>
+      </div>
+    
+  
+</div>
+
+    
+  </div>
+  
+</nav>
+
+    </div>
+    
+      <div class="site-search">
+        <div class="reimu-popup popup">
+          <div class="reimu-search">
+            <div class="reimu-search-input-icon"></div>
+            <div class="reimu-search-input" id="reimu-search-input"></div>
+            <div class="popup-btn-close"></div>
+          </div>
+          <div class="reimu-results">
+            <div id="reimu-stats"></div>
+            <div id="reimu-hits"></div>
+            <div id="reimu-pagination" class="reimu-pagination"></div>
+          </div>
+          <img class="reimu-bg" src="/images/reimu.png"/>
+        </div>
+      </div>
+    
+    
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+  
+<script src="/js/generator_search.js" defer></script>
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js" integrity="sha384-8LyaidD9GPxQQgLJO&#x2F;WRw&#x2F;O2h3BoNq&#x2F;ApI&#x2F;ecpvM6RsrCz2qP2ppBXUKihP4V&#x2F;2d" crossorigin="anonymous"></script>
+
+  <script>
+    window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
+  </script>
+
+
+
+
+
+  <script>
+    function initLive2d() {
+      live2d.init("https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/", {themeTipsPath: ""});
+    }
+  </script>
+  
+<script src="https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/js/live2d-autoload.js" onload="initLive2d &amp;&amp; initLive2d()" async></script>
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/quicklink@2.3.0/dist/quicklink.umd.js" integrity="sha384-aD7FsuQkS1ohgFKY41fJfeA+Wd&#x2F;QRNnrOd9Bs58K3FzKdJJv8yPnYU8Tnp5z1agS" crossorigin="anonymous"></script>
+
+  <script data-pjax>
+    window.quicklink?.listen({
+      timeout: 3000,
+      priority: true,
+      ignores: []
+    });
+  </script>
+
+
+<div id="lazy-script">
+  <div>
+       
+    
+    
+      
+    
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.8.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/aplayer@1.10.1/dist/APlayer.min.js" integrity="sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL&#x2F;aORyw+5+HZoU6e" crossorigin="anonymous"></script>
+
+  
+    <script>
+      var isMobile = window.matchMedia('(max-width: 959px)').matches;
+      if (isMobile) {
+      const aplayer = _$('#aplayer');
+        if (aplayer) {
+          const aside = aplayer.parentNode;
+          if (aside?.tagName === 'ASIDE') {
+            aplayer.removeAttribute('data-aos');
+            aside.removeChild(aplayer);
+            document.body.appendChild(aplayer);
+          }
+        }
+      }
+      const ap = new APlayer({
+        theme: "var(--color-link)",
+        container: document.getElementById('aplayer'),
+        audio: [{"name":"jazz","artist":"Relax Jazz Cafe","url":"https://mu6.me/193226","cover":"cover1.jpg","lrc":"lrc1.lrc","theme":"#ebd0c2"}] || [],
+        fixed: isMobile ? true : (null || false),
+        autoplay: null || false,
+        loop: '' || 'all',
+        order: '' || 'list',
+        preload: '' || 'auto',
+        volume: null || 0.7,
+        mutex: null || true,
+        listFolded: null || false,
+        lrcType: null || 0,
+      });
+    </script>
+  
+
+
+
+
+
+    
+  </body>
+  </html>
+
