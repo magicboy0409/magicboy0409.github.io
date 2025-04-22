@@ -293,7 +293,7 @@
   </div>
   <div class="sidebar-state-category">
     <div>分類</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">6</div>
   </div>
   <div class="sidebar-state-tag">
     <div>標籤</div>
@@ -384,7 +384,7 @@
 
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%A4%A2%E5%A2%83%E7%9A%84%E9%AD%94%E6%B3%95%E5%B8%AB/" data-aos="zoom-in">夢境的魔法師</a>
+    <a class="article-category-link" href="/categories/%E5%A4%A2%E5%A2%83%E7%9A%84%E9%AD%94%E6%B3%95%E5%B8%AB/" data-aos="zoom-in">夢境的魔法師</a><a class="article-category-link" href="/categories/%E5%A4%A2%E5%A2%83%E7%9A%84%E9%AD%94%E6%B3%95%E5%B8%AB/%E6%96%87%E5%AD%B8/" data-aos="zoom-in">文學</a>
   </div>
 
 
@@ -518,7 +518,7 @@
       
         <blockquote class="article-copyright">
     <p><strong><span class="icon-user icon"></span>本文作者：</strong>摸書士 @ 書士的書桌</p>
-    <p><strong><span class="icon-link icon"></span>本文連結：</strong><a href="https://blog.magicboy.xyz/zh-TW/The-magician-of-dreams/">https://blog.magicboy.xyz/zh-TW/The-magician-of-dreams/</a></p>
+    <p><strong><span class="icon-link icon"></span>本文連結：</strong><a href="https://blog.magicboy.xyz/The-magician-of-dreams/">https://blog.magicboy.xyz/The-magician-of-dreams/</a></p>
     
     
     <p><strong><span class="icon-calendar icon"></span>本文更新時間：</strong>2025-04-22 13:49:41</p>
@@ -718,7 +718,7 @@
   </div>
   <div class="sidebar-state-category">
     <div>分類</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">6</div>
   </div>
   <div class="sidebar-state-tag">
     <div>標籤</div>
@@ -865,6 +865,142 @@
     window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
   </script>
 
+
+
+  
+<script src="https://npm.webcache.cn/theme-shokax-pjax@0.0.3/dist/index.umd.js" integrity="sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE&#x2F;jMSCxD+jAPU55x&#x2F;jj3wlf" crossorigin="anonymous"></script>
+
+  <script>
+    function loadScripts(scripts, index) {
+      if (index < scripts.length) {
+        const script = scripts[index];
+        const src = script.getAttribute('src');
+
+        const loadScript = (scriptContent) => {
+          return new Promise((resolve, reject) => {
+            const scriptElement = document.createElement('script');
+            if (script.type) {
+              scriptElement.type = script.type;
+            }
+            if (script.src) {
+              scriptElement.src = script.src;
+              scriptElement.onload = resolve;
+              scriptElement.onerror = reject;
+            }
+            if (scriptContent) {
+              scriptElement.text = scriptContent;
+            }
+            document.head.appendChild(scriptElement);
+            if (!script.src) {
+              resolve();
+            }
+          })
+          
+        }
+
+        ;(src ? loadScript() : loadScript(script.text))
+          .then(() => loadScripts(scripts, index + 1))
+          .catch(error => {
+            console.error(`Failed to load script: ${src || 'inline script'}`, error);
+            loadScripts(scripts, index + 1);
+          });
+      }
+    }
+    if (window.Pjax) {
+      Pjax.prototype.getElements = function() {
+        const i18nLanguages = window.REIMU_CONFIG.i18n_languages;
+        const baseUrl = window.REIMU_CONFIG.base;
+        let basePathname = new URL(baseUrl).pathname;
+        if (!basePathname.endsWith('/')) {
+          basePathname += '/';  
+        }
+        const currentUrl = window.location.href;
+        const currentPathname = new URL(currentUrl).pathname.replace(basePathname, '');
+        const aLinks = document.querySelectorAll('a[href]');
+        const pjaxLinks = [];
+        for(let i = 0; i < aLinks.length; i++) {
+          const aLink = aLinks[i];
+          const aLinkHref = aLink.getAttribute('href');
+          const isExternal = aLink.getAttribute('target') === '_blank' || aLink.getAttribute('rel')?.includes('noopener');
+          if (isExternal || aLinkHref.startsWith('mailto:') || aLinkHref.startsWith('tel:') || aLinkHref.startsWith('javascript:') || aLinkHref.startsWith("data:") || aLinkHref.startsWith("vbscript:")) {
+            continue;
+          }
+          if (!i18nLanguages) {
+            // 多语言功能未打开
+            pjaxLinks.push(aLink);
+            continue;
+          }
+
+          const absoluteUrl = new URL(aLinkHref, currentUrl).href;
+          const absolutePathname = new URL(absoluteUrl).pathname.replace(basePathname, '');
+
+          if (!absolutePathname || !currentPathname) {
+            pjaxLinks.push(aLink);
+            continue;
+          }
+
+          const currentLangIndex = i18nLanguages.findIndex(lang => currentPathname.startsWith(lang));
+          if (currentLangIndex > -1) {
+            // 当前属于多语言站点
+            const absoluteLangIndex = i18nLanguages.findIndex(lang => absolutePathname.startsWith(lang));
+            if (absoluteLangIndex === currentLangIndex) {
+              // 同一语言站点，可以使用 pjax
+              pjaxLinks.push(aLink);
+            }
+          } else {
+            // 当前属于默认语言站点
+            const absoluteLangIndex = i18nLanguages.findIndex(lang => absolutePathname.startsWith(lang));
+            if (absoluteLangIndex === -1) {
+              // 同一语言站点，可以使用 pjax
+              pjaxLinks.push(aLink);
+            }
+          }
+        }
+        return pjaxLinks;
+      }
+    }
+    window.Pjax && new window.Pjax({
+      selectors: [
+        "#header>img",
+        "#header>picture",
+        "head title",
+        "#header-title",
+        "#subtitle-wrap",
+        "#main",
+        "#content",
+        ".sidebar-widget",
+        ".sidebar-wrapper",
+        '#mobile-nav',
+        '#lazy-script',
+        '#i18n-nav'
+      ],
+      switches: {
+        "#content": function(oldEl, newEl) {
+          // for sidebar change
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
+        "#header-title": Pjax.switches.outerHTML,
+        "#subtitle-wrap": Pjax.switches.outerHTML,
+        "#main": function(oldEl, newEl) {
+          const scripts = [...newEl.querySelectorAll('script')];
+          loadScripts(scripts, 0);
+          oldEl.outerHTML = newEl.outerHTML
+          this.onSwitch()
+        },
+        "#mobile-nav": Pjax.switches.outerHTML,
+        '#lazy-script': function(oldEl, newEl) {
+          const scripts = [...newEl.querySelectorAll('script')];
+          loadScripts(scripts, 0);
+          oldEl.innerHTML = newEl.innerHTML
+          this.onSwitch()
+        },
+      },
+      cacheBust: false
+    })
+  </script>
+  
+<script src="/js/pjax.js"></script>
 
 
 

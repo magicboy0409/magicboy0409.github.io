@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.magicboy.xyz/complete-blog/</loc>
+    
+    <lastmod>2025-04-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.magicboy.xyz/en/friend/</loc>
+    
+    <lastmod>2025-04-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.magicboy.xyz/en/about/</loc>
+    
+    <lastmod>2025-04-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.magicboy.xyz/hello-world/</loc>
     
     <lastmod>2025-04-22</lastmod>
@@ -23,15 +50,6 @@
     <loc>https://blog.magicboy.xyz/how-to-web/</loc>
     
     <lastmod>2025-02-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.magicboy.xyz/complete-blog/</loc>
-    
-    <lastmod>2025-02-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -203,27 +221,6 @@
   </url>
   
   <url>
-    <loc>https://blog.magicboy.xyz/tags/phoenix/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.magicboy.xyz/tags/Hanson-Chien/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.magicboy.xyz/tags/Higar/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.magicboy.xyz/tags/%E5%A6%82%E4%BD%95%E8%A3%BD%E4%BD%9C%E7%B6%B2%E9%A0%81/</loc>
     <lastmod>2025-04-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -267,6 +264,27 @@
   
   <url>
     <loc>https://blog.magicboy.xyz/tags/Github/</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.magicboy.xyz/tags/phoenix/</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.magicboy.xyz/tags/Hanson-Chien/</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.magicboy.xyz/tags/Higar/</loc>
     <lastmod>2025-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -332,6 +350,13 @@
   
   <url>
     <loc>https://blog.magicboy.xyz/categories/%E6%96%87%E5%AD%B8/</loc>
+    <lastmod>2025-04-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.magicboy.xyz/categories/%E5%A4%A2%E5%A2%83%E7%9A%84%E9%AD%94%E6%B3%95%E5%B8%AB/%E6%96%87%E5%AD%B8/</loc>
     <lastmod>2025-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

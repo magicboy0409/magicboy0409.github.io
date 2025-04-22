@@ -110,6 +110,8 @@
     
     <category term="夢境的魔法師" scheme="https://blog.magicboy.xyz/categories/%E5%A4%A2%E5%A2%83%E7%9A%84%E9%AD%94%E6%B3%95%E5%B8%AB/"/>
     
+    <category term="文學" scheme="https://blog.magicboy.xyz/categories/%E5%A4%A2%E5%A2%83%E7%9A%84%E9%AD%94%E6%B3%95%E5%B8%AB/%E6%96%87%E5%AD%B8/"/>
+    
     
     <category term="秘密魔法" scheme="https://blog.magicboy.xyz/tags/%E7%A7%98%E5%AF%86%E9%AD%94%E6%B3%95/"/>
     
@@ -253,9 +255,9 @@
     <link href="https://blog.magicboy.xyz/complete-blog/"/>
     <id>https://blog.magicboy.xyz/complete-blog/</id>
     <published>2024-11-18T13:04:49.000Z</published>
-    <updated>2025-02-17T07:48:05.223Z</updated>
+    <updated>2025-04-22T16:26:57.364Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="新增了什麼？"><a href="#新增了什麼？" class="headerlink" title="新增了什麼？"></a>新增了什麼？</h1><p>多虧了hexo的插件以及基本架構，我可以很快地建立出這些功能，雖然還是有點費盡，但總之是完成了！<br>那麼來講講到底新增了什麼吧！</p><h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h2><p>你們可以看到上面有搜索功能，未來文章一多時，就可以利用搜索功能來搜尋文章了！當然你還得記得關鍵字，要是忘了……<del>就代表你無緣</del></p><h2 id="看板娘"><a href="#看板娘" class="headerlink" title="看板娘"></a>看板娘</h2><p>這是一個可愛的小小動漫人物，你可以換一個，也可以給他們換衣服(當然不包含過程)，覺得礙眼也可以按叉叉關閉，當然你還是能把他按回來，跟你那個已經跑了的女朋友不一樣&gt;w&lt;</p><h2 id="評論區"><a href="#評論區" class="headerlink" title="評論區"></a>評論區</h2><p>評論區可以讓大家留言自己的看法，我最怕的是有人吵架，希望不要，大家心平氣和，不然我一個</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">comments: false</span><br></pre></td></tr></table></figure><p>另外，我創了一個Discord群，未來架設好後，會再給大家邀請連結！<br>差不多就是這樣~ 希望大家看的開心！交流的開心！如果有什麼錯誤，請評論區告訴我(好不容易建立好的評論區，用一下!!!)</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="新增了什麼？"><a href="#新增了什麼？" class="headerlink" title="新增了什麼？"></a>新增了什麼？</h1><p>多虧了hexo的插件以及基本架構，我可以很快地建立出這些功能，雖然還是有點費盡，但總之是完成了！<br>那麼來講講到底新增了什麼吧！</p><h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h2><p>你們可以看到上面有搜索功能，未來文章一多時，就可以利用搜索功能來搜尋文章了！當然你還得記得關鍵字，要是忘了……<del>就代表你無緣</del></p><h2 id="看板娘"><a href="#看板娘" class="headerlink" title="看板娘"></a>看板娘</h2><p>這是一個可愛的小小動漫人物，你可以換一個，也可以給他們換衣服(當然不包含過程)，覺得礙眼也可以按叉叉關閉，當然你還是能把他按回來，跟你那個已經跑了的女朋友不一樣&gt;w&lt;</p><h2 id="評論區"><a href="#評論區" class="headerlink" title="評論區"></a>評論區</h2><p>評論區可以讓大家留言自己的看法，我最怕的是有人吵架，希望不要，大家心平氣和。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">comments: false</span><br></pre></td></tr></table></figure><p>另外，我創了一個Discord群，未來架設好後，會再給大家邀請連結！<br>差不多就是這樣~ 希望大家看的開心！交流的開心！如果有什麼錯誤，請評論區告訴我(好不容易建立好的評論區，用一下!!!)</p>]]></content>
     
     
       

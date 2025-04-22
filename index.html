@@ -284,7 +284,7 @@
   </div>
   <div class="sidebar-state-category">
     <div>分類</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">6</div>
   </div>
   <div class="sidebar-state-tag">
     <div>標籤</div>
@@ -356,6 +356,38 @@
 </aside>
 
           <section id="main">
+  
+    <div class="post-categories-wrapper" data-aos="fade-up">
+      
+        
+        <div class="post-categories-wrap">
+          
+          <a class="post-link" href="/categories/%E9%AD%94%E8%A1%93" aria-label=""></a>
+          <div class="post-categories-cover">
+            
+              <img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Hieronymus_Bosch_051.jpg/1280px-Hieronymus_Bosch_051.jpg" data-sizes="auto" alt="魔術" class="lazyload">
+            
+            <h2>魔術</h2>
+            <h3>3 篇文章</h3>
+          </div>
+        </div>
+        
+      
+        
+        <div class="post-categories-wrap">
+          
+          <a class="post-link" href="/categories/%E6%96%87%E5%AD%B8" aria-label=""></a>
+          <div class="post-categories-cover">
+            
+              <img data-src="https://i.imgur.com/lTQv4cF.png" data-sizes="auto" alt="文學" class="lazyload">
+            
+            <h2>文學</h2>
+            <h3>2 篇文章</h3>
+          </div>
+        </div>
+        
+      
+    </div>
   
   
     
@@ -594,7 +626,7 @@ Angelo Carbone不是足球員(如果你Google這個名字，你會先查到來�
     <div class="post-info">
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2024-11-18</span>
-        <span><span class="icon-pencil"></span>313 字</span>
+        <span><span class="icon-pencil"></span>308 字</span>
         <span><span class="icon-clock"></span>1 分鐘</span>
       </div>
       <h2 class="post-title">部落格的新功能！</h2>
@@ -603,9 +635,9 @@ Angelo Carbone不是足球員(如果你Google這個名字，你會先查到來�
           新增了什麼？多虧了hexo的插件以及基本架構，我可以很快地建立出這些功能，雖然還是有點費盡，但總之是完成了！那麼來講講到底新增了什麼吧！
 搜索功能你們可以看到上面有搜索功能，未來文章一多時，就可以利用搜索功能來搜尋文章了！當然你還得記得關鍵字，要是忘了……就代表你無緣
 看板娘這是一個可愛的小小動漫人物，你可以換一個，也可以給他們換衣服(當然不包含過程)，覺得礙眼也可以按叉叉關閉，當然你還是能把他按回來，跟你那個已經跑了的女朋友不一樣&amp;gt;w&amp;lt;
-評論區評論區可以讓大家留言自己的看法，我最怕的是有人吵架，希望不要，大家心平氣和，不然我一個
+評論區評論區可以讓大家留言自己的看法，我最怕的是有人吵架，希望不要，大家心平氣和。
 1comments: false
-另外，我創了一個
+另外，我創了一個Disco
         
       </article>
     </div>
@@ -717,7 +749,7 @@ Angelo Carbone不是足球員(如果你Google這個名字，你會先查到來�
   </div>
   <div class="sidebar-state-category">
     <div>分類</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">6</div>
   </div>
   <div class="sidebar-state-tag">
     <div>標籤</div>
@@ -856,6 +888,142 @@ Angelo Carbone不是足球員(如果你Google這個名字，你會先查到來�
     window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
   </script>
 
+
+
+  
+<script src="https://npm.webcache.cn/theme-shokax-pjax@0.0.3/dist/index.umd.js" integrity="sha384-xneY1WY8hOfUzswrE4CrYq35N4BdVcxqxwHPr9zawE&#x2F;jMSCxD+jAPU55x&#x2F;jj3wlf" crossorigin="anonymous"></script>
+
+  <script>
+    function loadScripts(scripts, index) {
+      if (index < scripts.length) {
+        const script = scripts[index];
+        const src = script.getAttribute('src');
+
+        const loadScript = (scriptContent) => {
+          return new Promise((resolve, reject) => {
+            const scriptElement = document.createElement('script');
+            if (script.type) {
+              scriptElement.type = script.type;
+            }
+            if (script.src) {
+              scriptElement.src = script.src;
+              scriptElement.onload = resolve;
+              scriptElement.onerror = reject;
+            }
+            if (scriptContent) {
+              scriptElement.text = scriptContent;
+            }
+            document.head.appendChild(scriptElement);
+            if (!script.src) {
+              resolve();
+            }
+          })
+          
+        }
+
+        ;(src ? loadScript() : loadScript(script.text))
+          .then(() => loadScripts(scripts, index + 1))
+          .catch(error => {
+            console.error(`Failed to load script: ${src || 'inline script'}`, error);
+            loadScripts(scripts, index + 1);
+          });
+      }
+    }
+    if (window.Pjax) {
+      Pjax.prototype.getElements = function() {
+        const i18nLanguages = window.REIMU_CONFIG.i18n_languages;
+        const baseUrl = window.REIMU_CONFIG.base;
+        let basePathname = new URL(baseUrl).pathname;
+        if (!basePathname.endsWith('/')) {
+          basePathname += '/';  
+        }
+        const currentUrl = window.location.href;
+        const currentPathname = new URL(currentUrl).pathname.replace(basePathname, '');
+        const aLinks = document.querySelectorAll('a[href]');
+        const pjaxLinks = [];
+        for(let i = 0; i < aLinks.length; i++) {
+          const aLink = aLinks[i];
+          const aLinkHref = aLink.getAttribute('href');
+          const isExternal = aLink.getAttribute('target') === '_blank' || aLink.getAttribute('rel')?.includes('noopener');
+          if (isExternal || aLinkHref.startsWith('mailto:') || aLinkHref.startsWith('tel:') || aLinkHref.startsWith('javascript:') || aLinkHref.startsWith("data:") || aLinkHref.startsWith("vbscript:")) {
+            continue;
+          }
+          if (!i18nLanguages) {
+            // 多语言功能未打开
+            pjaxLinks.push(aLink);
+            continue;
+          }
+
+          const absoluteUrl = new URL(aLinkHref, currentUrl).href;
+          const absolutePathname = new URL(absoluteUrl).pathname.replace(basePathname, '');
+
+          if (!absolutePathname || !currentPathname) {
+            pjaxLinks.push(aLink);
+            continue;
+          }
+
+          const currentLangIndex = i18nLanguages.findIndex(lang => currentPathname.startsWith(lang));
+          if (currentLangIndex > -1) {
+            // 当前属于多语言站点
+            const absoluteLangIndex = i18nLanguages.findIndex(lang => absolutePathname.startsWith(lang));
+            if (absoluteLangIndex === currentLangIndex) {
+              // 同一语言站点，可以使用 pjax
+              pjaxLinks.push(aLink);
+            }
+          } else {
+            // 当前属于默认语言站点
+            const absoluteLangIndex = i18nLanguages.findIndex(lang => absolutePathname.startsWith(lang));
+            if (absoluteLangIndex === -1) {
+              // 同一语言站点，可以使用 pjax
+              pjaxLinks.push(aLink);
+            }
+          }
+        }
+        return pjaxLinks;
+      }
+    }
+    window.Pjax && new window.Pjax({
+      selectors: [
+        "#header>img",
+        "#header>picture",
+        "head title",
+        "#header-title",
+        "#subtitle-wrap",
+        "#main",
+        "#content",
+        ".sidebar-widget",
+        ".sidebar-wrapper",
+        '#mobile-nav',
+        '#lazy-script',
+        '#i18n-nav'
+      ],
+      switches: {
+        "#content": function(oldEl, newEl) {
+          // for sidebar change
+          oldEl.className = newEl.className;
+          this.onSwitch();
+        },
+        "#header-title": Pjax.switches.outerHTML,
+        "#subtitle-wrap": Pjax.switches.outerHTML,
+        "#main": function(oldEl, newEl) {
+          const scripts = [...newEl.querySelectorAll('script')];
+          loadScripts(scripts, 0);
+          oldEl.outerHTML = newEl.outerHTML
+          this.onSwitch()
+        },
+        "#mobile-nav": Pjax.switches.outerHTML,
+        '#lazy-script': function(oldEl, newEl) {
+          const scripts = [...newEl.querySelectorAll('script')];
+          loadScripts(scripts, 0);
+          oldEl.innerHTML = newEl.innerHTML
+          this.onSwitch()
+        },
+      },
+      cacheBust: false
+    })
+  </script>
+  
+<script src="/js/pjax.js"></script>
 
 
 
